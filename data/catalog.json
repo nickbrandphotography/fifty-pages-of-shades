@@ -1,0 +1,516 @@
+{
+  "artworks": [
+    {
+      "slug": "hidden-seams",
+      "title": "Hidden Seams",
+      "image": "/artworks/hidden-seams.jpg",
+      "thumb": "/artworks/hidden-seams-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "120 x 120 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "The boundary between what I show and what I keep.",
+      "featured": true,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "canyon-carved-into-the-landscape-of-the-body",
+      "title": "Canyon Carved Into the Landscape of the Body",
+      "image": "/artworks/canyon-carved-into-the-landscape-of-the-body.jpg",
+      "thumb": "/artworks/canyon-carved-into-the-landscape-of-the-body-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "The light gently kissing the skin, teasing your perception.",
+      "featured": true,
+      "pixels": {
+        "w": 1800,
+        "h": 1201
+      }
+    },
+    {
+      "slug": "sand-dunes-of-the-sole",
+      "title": "Sand Dunes of the Sole",
+      "image": "/artworks/sand-dunes-of-the-sole.jpg",
+      "thumb": "/artworks/sand-dunes-of-the-sole-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Absolutely amazing depth of field.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1198
+      }
+    },
+    {
+      "slug": "where-the-body-ends-and-atmosphere-begins",
+      "title": "Where the Body Ends and Atmosphere Begins",
+      "image": "/artworks/where-the-body-ends-and-atmosphere-begins.jpg",
+      "thumb": "/artworks/where-the-body-ends-and-atmosphere-begins-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Where light hesitates before descending.",
+      "featured": true,
+      "pixels": {
+        "w": 1800,
+        "h": 1201
+      }
+    },
+    {
+      "slug": "the-soft-angle",
+      "title": "The Soft Angle",
+      "image": "/artworks/the-soft-angle.jpg",
+      "thumb": "/artworks/the-soft-angle-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "The fold where heat collects.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1201
+      }
+    },
+    {
+      "slug": "the-crease-that-deepens-when-no-one-is-watching",
+      "title": "The Crease That Deepens When No One Is Watching",
+      "image": "/artworks/the-crease-that-deepens-when-no-one-is-watching.jpg",
+      "thumb": "/artworks/the-crease-that-deepens-when-no-one-is-watching-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "120 x 120 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "A fold that has forgotten it was ever open.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "skins-secret-conversation",
+      "title": "Skin's Secret Conversation",
+      "image": "/artworks/skins-secret-conversation.jpg",
+      "thumb": "/artworks/skins-secret-conversation-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "100 x 100 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "A crease that deepens when I am not watching.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "black-velvet",
+      "title": "Black Velvet",
+      "image": "/artworks/black-velvet.jpg",
+      "thumb": "/artworks/black-velvet-thumb.jpg",
+      "collection": "abstract-forms",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "100 x 100 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "When you can't climb the mountain, sit and enjoy the view.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "the-shadow-beneath-the-reach",
+      "title": "The Shadow Beneath the Reach",
+      "image": "/artworks/the-shadow-beneath-the-reach.jpg",
+      "thumb": "/artworks/the-shadow-beneath-the-reach-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "A hollow that fills with whatever you bring to it.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1285
+      }
+    },
+    {
+      "slug": "the-place-where-skin-forgets-it-ends",
+      "title": "The Place Where Skin Forgets It Ends",
+      "image": "/artworks/the-place-where-skin-forgets-it-ends.jpg",
+      "thumb": "/artworks/the-place-where-skin-forgets-it-ends-thumb.jpg",
+      "collection": "abstract-forms",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Where the eye rests and forgets to move on.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "the-place-hands-find",
+      "title": "The Place Hands Find",
+      "image": "/artworks/the-place-hands-find.jpg",
+      "thumb": "/artworks/the-place-hands-find-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "100 x 100 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Where light collects like water in a cupped hand.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1201
+      }
+    },
+    {
+      "slug": "the-angle-of-the-body-in-love-with-stillness",
+      "title": "The Angle of the Body in Love With Stillness",
+      "image": "/artworks/the-angle-of-the-body-in-love-with-stillness.jpg",
+      "thumb": "/artworks/the-angle-of-the-body-in-love-with-stillness-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "The quiet authority of a curve that asks nothing.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1201
+      }
+    },
+    {
+      "slug": "saturn",
+      "title": "Saturn",
+      "image": "/artworks/saturn.jpg",
+      "thumb": "/artworks/saturn-thumb.jpg",
+      "collection": "abstract-forms",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "120 x 120 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "A curve of the body rising like a planet from the dark, ringed by a single thread of light.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "the-meeting-of-two-quiet-planes",
+      "title": "The Meeting of Two Quiet Planes",
+      "image": "/artworks/the-meeting-of-two-quiet-planes.jpg",
+      "thumb": "/artworks/the-meeting-of-two-quiet-planes-thumb.jpg",
+      "collection": "abstract-forms",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Where one plane of the body yields to another, and the light forgets there was ever a border.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1334
+      }
+    },
+    {
+      "slug": "the-body-behind-the-weather",
+      "title": "The Body Behind the Weather",
+      "image": "/artworks/the-body-behind-the-weather.jpg",
+      "thumb": "/artworks/the-body-behind-the-weather-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "200 x 100 cm",
+      "orientation": "landscape",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Skin and rain sharing the same falling light, a body held quiet behind the glass.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1201
+      }
+    },
+    {
+      "slug": "the-line-that-holds-the-dark",
+      "title": "The Line That Holds the Dark",
+      "image": "/artworks/the-line-that-holds-the-dark.jpg",
+      "thumb": "/artworks/the-line-that-holds-the-dark-thumb.jpg",
+      "collection": "abstract-forms",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "120 x 120 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "Light traces the body's edge and lets the rest fall away, a single line holding back the dark.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    },
+    {
+      "slug": "the-slow-rise-of-the-back",
+      "title": "The Slow Rise of the Back",
+      "image": "/artworks/the-slow-rise-of-the-back.jpg",
+      "thumb": "/artworks/the-slow-rise-of-the-back-thumb.jpg",
+      "collection": "bodyscapes",
+      "editionSize": 15,
+      "editionsSold": 0,
+      "status": "available",
+      "size": "120 x 120 cm",
+      "orientation": "square",
+      "price": 2700,
+      "medium": "B&W photograph on canvas",
+      "description": "The back rising like a slow dune, skin caught in low light.",
+      "featured": false,
+      "pixels": {
+        "w": 1800,
+        "h": 1800
+      }
+    }
+  ],
+  "collections": [
+    {
+      "slug": "bodyscapes",
+      "title": "Bodyscapes",
+      "tagline": "The body as terrain. The signature series.",
+      "intro": "Bodyscapes is the series that gives this work its name: the human form photographed until it reads as landscape. A shoulder becomes a horizon, a curve becomes a dune, and light moves across skin the way it moves across sand.",
+      "count": 12
+    },
+    {
+      "slug": "abstract-forms",
+      "title": "Abstract Forms",
+      "tagline": "Where the figure dissolves into pure light and line.",
+      "intro": "Where Bodyscapes keeps a trace of the figure, Abstract Forms lets it go entirely. These works push past the recognisable into pure photographic abstraction — light, line and texture, composed for their own sake.",
+      "count": 5
+    }
+  ],
+  "pricing": {
+    "landscape": [
+      {
+        "size": "150 x 75 cm",
+        "frame": "No frame (gallery wrap)",
+        "price": 1700,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 75 cm",
+        "frame": "Black floating frame",
+        "price": 1900,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 75 cm",
+        "frame": "Natural oak floating frame",
+        "price": 1900,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 75 cm",
+        "frame": "White floating frame",
+        "price": 1900,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "200 x 100 cm",
+        "frame": "No frame (gallery wrap)",
+        "price": 2500,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "200 x 100 cm",
+        "frame": "Black floating frame",
+        "price": 2700,
+        "status": "CONFIRMED"
+      },
+      {
+        "size": "200 x 100 cm",
+        "frame": "Natural oak floating frame",
+        "price": 2700,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "200 x 100 cm",
+        "frame": "White floating frame",
+        "price": 2700,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "240 x 120 cm",
+        "frame": "No frame (gallery wrap)",
+        "price": 3400,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "240 x 120 cm",
+        "frame": "Black floating frame",
+        "price": 3600,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "240 x 120 cm",
+        "frame": "Natural oak floating frame",
+        "price": 3600,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "240 x 120 cm",
+        "frame": "White floating frame",
+        "price": 3600,
+        "status": "PROPOSED"
+      }
+    ],
+    "square": [
+      {
+        "size": "100 x 100 cm",
+        "frame": "No frame (gallery wrap)",
+        "price": 1700,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "100 x 100 cm",
+        "frame": "Black floating frame",
+        "price": 1900,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "100 x 100 cm",
+        "frame": "Natural oak floating frame",
+        "price": 1900,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "100 x 100 cm",
+        "frame": "White floating frame",
+        "price": 1900,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "120 x 120 cm",
+        "frame": "No frame (gallery wrap)",
+        "price": 2500,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "120 x 120 cm",
+        "frame": "Black floating frame",
+        "price": 2700,
+        "status": "CONFIRMED"
+      },
+      {
+        "size": "120 x 120 cm",
+        "frame": "Natural oak floating frame",
+        "price": 2700,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "120 x 120 cm",
+        "frame": "White floating frame",
+        "price": 2700,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 150 cm",
+        "frame": "No frame (gallery wrap)",
+        "price": 3400,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 150 cm",
+        "frame": "Black floating frame",
+        "price": 3600,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 150 cm",
+        "frame": "Natural oak floating frame",
+        "price": 3600,
+        "status": "PROPOSED"
+      },
+      {
+        "size": "150 x 150 cm",
+        "frame": "White floating frame",
+        "price": 3600,
+        "status": "PROPOSED"
+      }
+    ]
+  },
+  "frames": [
+    "No frame (gallery wrap)",
+    "Black floating frame",
+    "Natural oak floating frame",
+    "White floating frame"
+  ]
+}
