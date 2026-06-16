@@ -15,7 +15,10 @@ export default function ArtworkCard({ a }: { a: Artwork }) {
       </div>
       <div className="mt-4">
         <div className="font-serif text-lg leading-snug">{a.title}</div>
-        <div className="mt-1 text-xs text-ink/50">{a.size} · {editionLabel(a)}</div>
+        {a.description && (
+          <p className="mt-1 max-w-prose text-sm italic leading-relaxed text-ink/55">{a.description}</p>
+        )}
+        <div className="mt-2 text-xs text-ink/50">{a.size} · {editionLabel(a)}</div>
         <div className="mt-1 text-sm text-ink/70">From {formatAUD(fromPrice(a.orientation))}</div>
       </div>
     </Link>
