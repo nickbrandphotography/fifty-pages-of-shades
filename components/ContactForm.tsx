@@ -19,7 +19,7 @@ export default function ContactForm() {
   }, []);
 
   const mailto = () => {
-    const subject = ctx.work ? `Enquiry — ${ctx.work}` : "Enquiry — 50 Pages of Shades";
+    const subject = ctx.work ? `Enquiry — ${ctx.work}` : "Enquiry — Fifty Pages of Shades";
     const body =
       (ctx.work ? `Work: ${ctx.work}\nSize: ${ctx.size}\nFrame: ${ctx.frame}\nIndicative price: ${ctx.price ? "$" + ctx.price : "-"}\n\n` : "") +
       `Name: ${name}\nEmail: ${email}\n\n${message}`;

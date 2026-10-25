@@ -13,7 +13,7 @@ export default function Footer() {
     <footer className="mt-28 border-t border-line bg-paper">
       <div className="mx-auto grid max-w-content gap-10 px-5 py-16 md:grid-cols-6 md:px-10">
         <div className="md:col-span-2">
-          <div className="font-serif text-2xl">50 Pages of Shades</div>
+          <div className="font-serif text-2xl">Fifty Pages of Shades</div>
           <p className="mt-3 max-w-sm text-sm text-ink/60">
             Black-and-white fine art photography of the human form by Nick Brand. Limited editions on framed canvas,
             custom sizes, Australia-wide and worldwide delivery.
@@ -30,7 +30,7 @@ export default function Footer() {
         ))}
       </div>
       <div className="mx-auto max-w-content px-5 pb-10 text-xs text-ink/40 md:px-10">
-        © {new Date().getFullYear()} 50 Pages of Shades. All works © Nick Brand. Reproduction prohibited. · {site.city}
+        © {new Date().getFullYear()} Fifty Pages of Shades. All works © Nick Brand. Reproduction prohibited. · {site.city}
       </div>
     </footer>
   );

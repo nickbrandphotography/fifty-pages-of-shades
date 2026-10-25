@@ -1,5 +1,5 @@
 export const site = {
-  name: "50 Pages of Shades",
+  name: "Fifty Pages of Shades",
   url: "https://www.fiftypagesofshades.com",
   tagline: "Black-and-white fine art photography of the human form.",
   artist: "Nick Brand",

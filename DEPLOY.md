@@ -1,4 +1,4 @@
-# Deploy 50 Pages of Shades to Vercel (GitHub method)
+# Deploy Fifty Pages of Shades to Vercel (GitHub method)
 
 You have Node, GitHub and Vercel ready, so this takes about 10 minutes. Commands are shown for **Windows PowerShell**.
 Run them inside the site folder.
@@ -33,30 +33,30 @@ buttons), the journal. When happy, press `Ctrl + C` in the terminal to stop it.
 ```powershell
 git init
 git add -A
-git commit -m "50 Pages of Shades website"
+git commit -m "Fifty Pages of Shades website"
 ```
 
 Now create an **empty** repository on GitHub:
 1. Go to https://github.com/new
-2. Name it `50-pages-of-shades` (or anything). **Do not** tick "Add a README" / .gitignore / licence — leave it empty.
-3. Click **Create repository**. GitHub shows you a URL like `https://github.com/yourname/50-pages-of-shades.git`.
+2. Name it `fifty-pages-of-shades` (or anything). **Do not** tick "Add a README" / .gitignore / licence — leave it empty.
+3. Click **Create repository**. GitHub shows you a URL like `https://github.com/yourname/fifty-pages-of-shades.git`.
 
 Push your code to it (replace the URL with yours):
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/yourname/50-pages-of-shades.git
+git remote add origin https://github.com/yourname/fifty-pages-of-shades.git
 git push -u origin main
 ```
 
 ## 4. Import into Vercel
 
 1. Go to https://vercel.com/new
-2. Under **Import Git Repository**, pick your `50-pages-of-shades` repo (authorise GitHub if asked).
+2. Under **Import Git Repository**, pick your `fifty-pages-of-shades` repo (authorise GitHub if asked).
 3. Vercel auto-detects **Next.js** — leave every setting as-is.
 4. Click **Deploy**.
 
-In ~1–2 minutes you'll get a live URL like `https://50-pages-of-shades.vercel.app`. That's it — you're live.
+In ~1–2 minutes you'll get a live URL like `https://fifty-pages-of-shades.vercel.app`. That's it — you're live.
 
 ## 5. (Optional now) Turn on real enquiry emails
 

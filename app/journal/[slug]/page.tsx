@@ -25,7 +25,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
     "@context": "https://schema.org", "@type": "BlogPosting", headline: a.title,
     description: a.seoDescription, datePublished: a.date, dateModified: a.date, inLanguage: "en-AU",
     author: { "@type": "Person", name: "Nick Brand" },
-    publisher: { "@type": "Organization", name: "50 Pages of Shades" },
+    publisher: { "@type": "Organization", name: "Fifty Pages of Shades" },
     mainEntityOfPage: `${site.url}/journal/${a.slug}`,
   };
   return (

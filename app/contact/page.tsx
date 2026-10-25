@@ -21,7 +21,7 @@ export default function ContactPage() {
           </p>
           <div className="mt-8 text-sm text-ink/70">
             <div className="eyebrow mb-2">Studio</div>
-            Nick Brand · 50 Pages of Shades<br />Sydney, Australia<br />hello@bodyscapes.com.au
+            Nick Brand · Fifty Pages of Shades<br />Sydney, Australia<br />hello@bodyscapes.com.au
           </div>
         </div>
         <ContactForm />

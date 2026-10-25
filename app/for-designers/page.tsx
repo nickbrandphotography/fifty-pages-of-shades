@@ -23,7 +23,7 @@ export default function ForDesignersPage() {
       <div className="eyebrow mb-3">Trade Program</div>
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">A trade program built for designers and architects</h1>
       <p className="mt-6 max-w-2xl text-ink/60">
-        50 Pages of Shades works with interior designers, architects, developers and corporate clients to place distinctive,
+        Fifty Pages of Shades works with interior designers, architects, developers and corporate clients to place distinctive,
         large-scale black-and-white art into residential, hospitality and commercial spaces. Trade pricing, custom
         sizing, and turnkey framing and delivery — handled directly with the studio.
       </p>

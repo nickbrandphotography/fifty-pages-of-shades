@@ -18,7 +18,7 @@ export async function POST(req: Request) {
 
   const apiKey = process.env.RESEND_API_KEY;
   const to = process.env.ENQUIRY_TO || "hello@bodyscapes.com.au";
-  const from = process.env.ENQUIRY_FROM || "50 Pages of Shades <enquiries@bodyscapes.com.au>";
+  const from = process.env.ENQUIRY_FROM || "Fifty Pages of Shades <enquiries@bodyscapes.com.au>";
 
   // No email provider configured yet — tell the client to fall back to mailto.
   if (!apiKey) {
@@ -43,7 +43,7 @@ export async function POST(req: Request) {
       headers: { Authorization: `Bearer ${apiKey}`, "Content-Type": "application/json" },
       body: JSON.stringify({
         from, to: [to], reply_to: data.email,
-        subject: data.work ? `Enquiry — ${data.work}` : "Enquiry — 50 Pages of Shades",
+        subject: data.work ? `Enquiry — ${data.work}` : "Enquiry — Fifty Pages of Shades",
         text: lines,
       }),
     });

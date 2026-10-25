@@ -33,7 +33,7 @@ export default function CollectorGuide() {
           decorative print has none of these — which is why a genuine limited edition holds value in a way a poster never will.</p>
       </Section>
       <Section title="Limited edition vs open edition">
-        <p>A limited edition is released in a fixed number of prints — for 50 Pages of Shades, an edition of 15 — after which the
+        <p>A limited edition is released in a fixed number of prints — for Fifty Pages of Shades, an edition of 15 — after which the
           edition closes permanently and is never reprinted. An open edition has no limit and can be reproduced indefinitely.
           Scarcity is the difference, and scarcity is what underpins long-term value.</p>
       </Section>
@@ -49,7 +49,7 @@ export default function CollectorGuide() {
       </Section>
       <Section title="How much does fine art photography cost?">
         <p>Prices vary with the artist, the edition size, and — for work on canvas — the size and framing of the piece.
-          Works from 50 Pages of Shades are priced from $1,700, with the final price set by the size and frame you choose. Prices are shown
+          Works from Fifty Pages of Shades are priced from $1,700, with the final price set by the size and frame you choose. Prices are shown
           openly on each work and update as you select size and frame.</p>
       </Section>
       <Section title="Choosing the right size for your wall">
