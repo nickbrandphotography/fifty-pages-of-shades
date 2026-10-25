@@ -4,7 +4,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { press } from "@/lib/authority";
 
 export const metadata: Metadata = {
-  title: "Press — Nick Brand Bodyscapes",
+  title: "Press — Nick Brand · 50 Pages of Shades",
   description: "Press, features and media on Nick Brand's bodyscape photography. Media enquiries and press kit available on request.",
 };
 
@@ -17,7 +17,7 @@ export default function Press() {
       {press.length === 0 ? (
         <p className="mt-6 max-w-2xl font-serif text-2xl leading-relaxed text-ink/80">
           For media enquiries, interviews or image requests, the studio is happy to help. A press kit with artist
-          biography, high-resolution images and the Bodyscapes story is available on request —
+          biography, high-resolution images and the 50 Pages of Shades story is available on request —
           <Link href="/contact/" className="underline"> contact the studio</Link>.
         </p>
       ) : (

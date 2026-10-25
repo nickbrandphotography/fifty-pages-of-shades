@@ -26,7 +26,7 @@ export default function AboutPage() {
           width={1200} height={1200} sizes="(max-width: 768px) 100vw, 40vw"
           className="h-auto w-full shadow-[0_40px_70px_-40px_rgba(0,0,0,0.5)]" />
         <div>
-          <div className="eyebrow mb-3">The artist behind Bodyscapes</div>
+          <div className="eyebrow mb-3">The artist behind 50 Pages of Shades</div>
           <h1 className="font-serif text-5xl leading-tight">Nick Brand</h1>
           <p className="mt-6 font-serif text-2xl leading-relaxed text-ink/85">
             Nick Brand is a Sydney fine-art photographer with more than twenty years behind the camera. Bodyscapes

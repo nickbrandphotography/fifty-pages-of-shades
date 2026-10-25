@@ -1,4 +1,4 @@
-# Deploy Bodyscapes to Vercel (GitHub method)
+# Deploy 50 Pages of Shades to Vercel (GitHub method)
 
 You have Node, GitHub and Vercel ready, so this takes about 10 minutes. Commands are shown for **Windows PowerShell**.
 Run them inside the site folder.
@@ -33,30 +33,30 @@ buttons), the journal. When happy, press `Ctrl + C` in the terminal to stop it.
 ```powershell
 git init
 git add -A
-git commit -m "Bodyscapes website"
+git commit -m "50 Pages of Shades website"
 ```
 
 Now create an **empty** repository on GitHub:
 1. Go to https://github.com/new
-2. Name it `bodyscapes` (or anything). **Do not** tick "Add a README" / .gitignore / licence — leave it empty.
-3. Click **Create repository**. GitHub shows you a URL like `https://github.com/yourname/bodyscapes.git`.
+2. Name it `50-pages-of-shades` (or anything). **Do not** tick "Add a README" / .gitignore / licence — leave it empty.
+3. Click **Create repository**. GitHub shows you a URL like `https://github.com/yourname/50-pages-of-shades.git`.
 
 Push your code to it (replace the URL with yours):
 
 ```powershell
 git branch -M main
-git remote add origin https://github.com/yourname/bodyscapes.git
+git remote add origin https://github.com/yourname/50-pages-of-shades.git
 git push -u origin main
 ```
 
 ## 4. Import into Vercel
 
 1. Go to https://vercel.com/new
-2. Under **Import Git Repository**, pick your `bodyscapes` repo (authorise GitHub if asked).
+2. Under **Import Git Repository**, pick your `50-pages-of-shades` repo (authorise GitHub if asked).
 3. Vercel auto-detects **Next.js** — leave every setting as-is.
 4. Click **Deploy**.
 
-In ~1–2 minutes you'll get a live URL like `https://bodyscapes.vercel.app`. That's it — you're live.
+In ~1–2 minutes you'll get a live URL like `https://50-pages-of-shades.vercel.app`. That's it — you're live.
 
 ## 5. (Optional now) Turn on real enquiry emails
 
@@ -72,12 +72,11 @@ emailed to you instead:
 
 ## 6. Connect your domain
 
-1. Vercel → your project → **Settings → Domains** → add `bodyscapes.com.au` (and `www.bodyscapes.com.au`).
+1. Vercel → your project → **Settings → Domains** → add `fiftypagesofshades.com` (and `www.fiftypagesofshades.com`).
 2. Vercel shows the DNS records to set. Add them at whoever manages your domain's DNS (the registrar).
 3. SSL is automatic. Once DNS propagates (minutes to a few hours), the site is live on your domain.
 
-> Note: `bodyscapes.com.au` currently points at the temporary site. Switching the DNS to Vercel replaces it — so
-> only do step 6 when you're happy with the new site.
+> Note: only point your domain's DNS at Vercel when you're happy with the site.
 
 ---
 

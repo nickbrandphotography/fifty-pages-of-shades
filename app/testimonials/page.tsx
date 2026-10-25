@@ -5,7 +5,7 @@ import JsonLd from "@/components/JsonLd";
 import { testimonials } from "@/lib/authority";
 
 export const metadata: Metadata = {
-  title: "Testimonials — Collectors & Designers on Bodyscapes",
+  title: "Testimonials — Collectors & Designers on 50 Pages of Shades",
   description: "What collectors, interior designers and clients say about Nick Brand's bodyscape art and working with the studio.",
 };
 
@@ -15,7 +15,7 @@ export default function Testimonials() {
       {testimonials.map((t, i) => (
         <JsonLd key={i} data={{ "@context": "https://schema.org", "@type": "Review",
           reviewBody: t.quote, author: { "@type": "Person", name: t.name },
-          itemReviewed: { "@type": "Organization", name: "Bodyscapes" } }} />
+          itemReviewed: { "@type": "Organization", name: "50 Pages of Shades" } }} />
       ))}
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Testimonials" }]} />
       <div className="eyebrow mb-3">Testimonials</div>

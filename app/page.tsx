@@ -12,7 +12,7 @@ export default function Home() {
       {/* Hero */}
       <section className="mx-auto grid max-w-content items-center gap-10 px-5 py-16 md:grid-cols-2 md:px-10 md:py-24">
         <div className="reveal">
-          <div className="eyebrow mb-5">Bodyscapes · Nick Brand</div>
+          <div className="eyebrow mb-5">50 Pages of Shades · Nick Brand</div>
           <h1 className="font-serif text-5xl leading-[1.05] md:text-6xl">Form, abstracted.<br />The body as landscape.</h1>
           <p className="mt-6 max-w-md text-ink/60">
             Black-and-white bodyscape art in limited editions — for collectors, designers and architects.

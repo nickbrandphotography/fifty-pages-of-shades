@@ -1,6 +1,6 @@
-# Bodyscapes — Website (Next.js 15, Vercel)
+# 50 Pages of Shades — Website (Next.js 15, Vercel)
 
-Collector-acquisition site for **Bodyscapes** by Nick Brand. Black-and-white bodyscape & abstract photographic
+Collector-acquisition site for **50 Pages of Shades** by Nick Brand. Black-and-white bodyscape & abstract photographic
 art, limited editions on framed canvas. Built with Next.js 15 (App Router), TypeScript, Tailwind. Runs natively
 on **Vercel** with automatic image optimisation.
 
@@ -17,7 +17,7 @@ npm start          # serve the production build
 
 1. Push this `site/` folder to a Git repo (GitHub/GitLab/Bitbucket).
 2. In Vercel: **New Project → import the repo**. Framework preset auto-detects **Next.js** — no config needed.
-3. Set the custom domain `bodyscapes.com.au` in Vercel → Project → Domains.
+3. Set the custom domain `fiftypagesofshades.com` in Vercel → Project → Domains.
 
 Or from the CLI: `npm i -g vercel` then `vercel` (preview) / `vercel --prod` (production), run inside `site/`.
 
@@ -37,7 +37,7 @@ Image optimisation (AVIF/WebP, responsive srcset) is handled automatically by Ve
 
 ## Your content
 
-1. **`../artworks/`** (the `Body Scapes/artworks` folder) — `artworks.csv`, `pricing.csv`, `images/`.
+1. **`../artworks/`** (the `Body Scapes/artworks` folder in the project) — `artworks.csv`, `pricing.csv`, `images/`.
 2. **`data/catalog.json`** — the generated catalogue the site reads.
 
 ### To update artworks or prices

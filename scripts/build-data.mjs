@@ -1,4 +1,4 @@
-// Regenerate data/catalog.json from the CSVs in ../Body Scapes/artworks/
+// Regenerate data/catalog.json from the CSVs in ../artworks/
 // Usage: node scripts/build-data.mjs  (run from the site/ folder)
 import fs from "node:fs";
 import path from "node:path";
@@ -33,7 +33,7 @@ for (const p of P) pricing[p.aspect]?.push({ size: p.size_label, frame: p.frame,
 const frames = [...new Set(pricing.landscape.map(p => p.frame))];
 const meta = {
   bodyscapes: { title: "Bodyscapes", tagline: "The body as terrain. The signature series.",
-    intro: "Bodyscapes is the series that gives this work its name: the human form photographed until it reads as landscape. A shoulder becomes a horizon, a curve becomes a dune, and light moves across skin the way it moves across sand." },
+    intro: "Bodyscapes is the series at the heart of this work: the human form photographed until it reads as landscape. A shoulder becomes a horizon, a curve becomes a dune, and light moves across skin the way it moves across sand." },
   "abstract-forms": { title: "Abstract Forms", tagline: "Where the figure dissolves into pure light and line.",
     intro: "Where Bodyscapes keeps a trace of the figure, Abstract Forms lets it go entirely. These works push past the recognisable into pure photographic abstraction — light, line and texture, composed for their own sake." },
 };

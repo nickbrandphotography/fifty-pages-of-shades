@@ -1,6 +1,6 @@
 export const site = {
-  name: "Bodyscapes",
-  url: "https://www.bodyscapes.com.au",
+  name: "50 Pages of Shades",
+  url: "https://www.fiftypagesofshades.com",
   tagline: "Black-and-white fine art photography of the human form.",
   artist: "Nick Brand",
   city: "Sydney, Australia",

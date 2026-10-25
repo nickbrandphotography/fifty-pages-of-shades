@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { q: "Do you supply art for offices and commercial spaces?", a: "Yes. Bodyscapes provides original black-and-white art for corporate, hospitality and commercial interiors, at scale, project-managed end to end." },
+  { q: "Do you supply art for offices and commercial spaces?", a: "Yes. 50 Pages of Shades provides original black-and-white art for corporate, hospitality and commercial interiors, at scale, project-managed end to end." },
   { q: "Can you handle multi-site or large orders?", a: "Yes, including cohesive schemes across floors, buildings or sites, and the same image scaled across spaces." },
   { q: "Is the work appropriate for a professional setting?", a: "Yes. It is abstract, tasteful monochrome form — distinctive and universally appropriate, never nude or boudoir." },
 ];
@@ -22,11 +22,11 @@ export default function CorporateArt() {
       <div className="eyebrow mb-3">Corporate Art</div>
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">Gallery-quality art for workspaces</h1>
       <Lede>
-        Bodyscapes supplies original black-and-white photographic art for corporate and commercial spaces — offices,
+        50 Pages of Shades supplies original black-and-white photographic art for corporate and commercial spaces — offices,
         receptions, boardrooms, hotels, restaurants and developments. Abstract, tasteful and made at scale on framed canvas.
       </Lede>
 
-      <Section title="Why companies choose Bodyscapes">
+      <Section title="Why companies choose 50 Pages of Shades">
         <p><strong>Brand-safe and universal.</strong> Abstract monochrome form suits any corporate environment — distinctive
           without being divisive. Never nude or boudoir; always appropriate for a public, professional setting.</p>
         <p><strong>Built for scale.</strong> Printed on canvas, the work commands large reception walls and lobbies while
