@@ -17,8 +17,8 @@ export async function POST(req: Request) {
   }
 
   const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.ENQUIRY_TO || "hello@bodyscapes.com.au";
-  const from = process.env.ENQUIRY_FROM || "Fifty Pages of Shades <enquiries@bodyscapes.com.au>";
+  const to = process.env.ENQUIRY_TO || "studio@fiftypagesofshades.com";
+  const from = process.env.ENQUIRY_FROM || "Fifty Pages of Shades <studio@fiftypagesofshades.com>";
 
   // No email provider configured yet — tell the client to fall back to mailto.
   if (!apiKey) {

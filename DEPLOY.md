@@ -63,11 +63,11 @@ In ~1–2 minutes you'll get a live URL like `https://fifty-pages-of-shades.verc
 The contact form works immediately — until you do this step, it opens the visitor's email app. To have enquiries
 emailed to you instead:
 
-1. Sign up at https://resend.com, add and verify your domain (`bodyscapes.com.au`), and create an API key.
+1. Sign up at https://resend.com, add and verify your domain (`fiftypagesofshades.com`), and create an API key.
 2. In Vercel → your project → **Settings → Environment Variables**, add:
    - `RESEND_API_KEY` = your key
-   - `ENQUIRY_TO` = `hello@bodyscapes.com.au` (where you want enquiries sent)
-   - `ENQUIRY_FROM` = `Bodyscapes <enquiries@bodyscapes.com.au>` (must be on your verified domain)
+   - `ENQUIRY_TO` = `studio@fiftypagesofshades.com` (where you want enquiries sent)
+   - `ENQUIRY_FROM` = `Fifty Pages of Shades <studio@fiftypagesofshades.com>` (must be on your verified domain)
 3. Redeploy (Vercel → Deployments → ⋯ → Redeploy), or just push any change.
 
 ## 6. Connect your domain

@@ -4,7 +4,7 @@ export const site = {
   tagline: "Black-and-white fine art photography of the human form.",
   artist: "Nick Brand",
   city: "Sydney, Australia",
-  email: "hello@bodyscapes.com.au",
+  email: "studio@fiftypagesofshades.com",
   description:
     "Museum-quality black-and-white bodyscape and abstract photographic art by Sydney artist Nick Brand. Limited editions on framed canvas, in custom sizes.",
   nav: [
