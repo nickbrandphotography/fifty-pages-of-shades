@@ -3,6 +3,7 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Lede, Section } from "@/components/Prose";
 import Faq from "@/components/Faq";
+import NitaNote from "@/components/NitaNote";
 
 export const metadata: Metadata = {
   title: "Corporate Art — Statement Photography for Workspaces",
@@ -45,6 +46,11 @@ export default function CorporateArt() {
         <h2 className="mb-6 font-serif text-3xl">Common questions</h2>
         <Faq items={faqs} />
       </div>
+      <p className="mt-10 text-sm text-ink/60">
+        Also see <Link href="/healthcare-art/" className="underline">art for hospitals and healthcare spaces</Link> and the{" "}
+        <Link href="/for-designers/" className="underline">trade program</Link>.
+      </p>
+      <NitaNote audience="Facilities and workplace teams are welcome to see the work at full scale before choosing." />
       <div className="mt-12 flex gap-3">
         <Link href="/contact/" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">Request a proposal</Link>
         <Link href="/large-scale-art/" className="border border-line px-6 py-3 text-xs uppercase tracking-widest2 text-ink/70 transition hover:border-ink hover:text-ink">Large Scale Art</Link>

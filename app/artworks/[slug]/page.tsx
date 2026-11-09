@@ -5,6 +5,7 @@ import { artworks, getArtwork, getCollection, related, pricingFor, sizesFor, fra
 import ArtworkExperience from "@/components/ArtworkExperience";
 import ArtworkCard from "@/components/ArtworkCard";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import NitaNote from "@/components/NitaNote";
 import JsonLd from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
@@ -28,9 +29,21 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
   if (!a) notFound();
   const coll = getCollection(a.collection);
   const [w, h] = a.size.replace(/ cm/, "").split(" x ").map((n) => parseInt(n));
+  const prices = pricingFor(a.orientation).map((p) => p.price);
   const schema = {
-    "@context": "https://schema.org", "@type": "VisualArtwork", name: a.title,
-    creator: { "@type": "Person", name: "Nick Brand" },
+    "@context": "https://schema.org", "@type": ["VisualArtwork", "Product"], name: a.title,
+    url: `${site.url}/artworks/${a.slug}/`, sku: a.slug,
+    creator: { "@id": `${site.url}/#nick-brand` },
+    brand: { "@id": `${site.url}/#organization` },
+    copyrightHolder: { "@id": `${site.url}/#nick-brand` },
+    category: "Fine art photography",
+    material: "Canvas",
+    offers: {
+      "@type": "AggregateOffer", priceCurrency: "AUD", lowPrice: Math.min(...prices), highPrice: Math.max(...prices), offerCount: prices.length,
+      availability: a.status === "sold" ? "https://schema.org/SoldOut" : "https://schema.org/LimitedAvailability",
+      url: `${site.url}/artworks/${a.slug}/`, seller: { "@id": `${site.url}/#organization` },
+      areaServed: { "@type": "Country", name: "Australia" },
+    },
     artform: "Photography", artMedium: a.medium, artworkSurface: "Canvas",
     image: `${site.url}${a.image}`, description: a.description, inLanguage: "en-AU",
     width: { "@type": "QuantitativeValue", value: w, unitCode: "CMT" },
@@ -40,9 +53,9 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
   const crumbs = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: site.url },
-      { "@type": "ListItem", position: 2, name: "Available Works", item: `${site.url}/artworks` },
-      { "@type": "ListItem", position: 3, name: a.title, item: `${site.url}/artworks/${a.slug}` },
+      { "@type": "ListItem", position: 1, name: "Home", item: `${site.url}/` },
+      { "@type": "ListItem", position: 2, name: "Available Works", item: `${site.url}/artworks/` },
+      { "@type": "ListItem", position: 3, name: a.title, item: `${site.url}/artworks/${a.slug}/` },
     ],
   };
   return (
@@ -88,6 +101,8 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
           </dl>
         </div>
       </div>
+
+      <NitaNote audience={`See ${a.title} and the rest of the series in person.`} />
 
       {/* Related */}
       {related(a).length > 0 && (

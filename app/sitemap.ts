@@ -1,15 +1,18 @@
 import type { MetadataRoute } from "next";
 import { artworks, collections } from "@/lib/catalog";
 import { articles } from "@/lib/journal";
-import { site } from "@/lib/site";
+import { site, LAST_MODIFIED } from "@/lib/site";
 
+// URLs end in "/" to match next.config trailingSlash, so the sitemap never lists a URL that redirects.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const fixed = ["", "/collections", "/artworks", "/large-scale-art", "/for-designers", "/for-designers/corporate-art", "/commissions", "/collectors/collector-guide", "/collectors/investment-in-photographic-art", "/resources/faq", "/resources/glossary", "/journal", "/about", "/about/exhibitions", "/about/press", "/about/awards-and-recognition", "/testimonials", "/contact"];
+  const lastModified = new Date(LAST_MODIFIED);
+  const fixed = ["", "/collections", "/artworks", "/large-scale-art", "/for-designers", "/for-designers/corporate-art", "/healthcare-art", "/commissions", "/collectors/collector-guide", "/collectors/investment-in-photographic-art", "/resources/faq", "/resources/glossary", "/journal", "/about", "/about/exhibitions", "/about/press", "/about/awards-and-recognition", "/testimonials", "/contact"];
+  const priority = (p: string) => (p === "" ? 1 : ["/for-designers", "/for-designers/corporate-art", "/healthcare-art", "/artworks", "/about/exhibitions"].includes(p) ? 0.8 : 0.7);
   return [
-    ...fixed.map((p) => ({ url: `${site.url}${p}`, changeFrequency: "monthly" as const, priority: p === "" ? 1 : 0.7 })),
-    ...collections.map((c) => ({ url: `${site.url}/collections/${c.slug}`, changeFrequency: "monthly" as const, priority: 0.8 })),
-    ...artworks.map((a) => ({ url: `${site.url}/artworks/${a.slug}`, changeFrequency: "monthly" as const, priority: 0.6 })),
-    ...articles.map((a) => ({ url: `${site.url}/journal/${a.slug}`, changeFrequency: "monthly" as const, priority: 0.5 })),
+    ...fixed.map((p) => ({ url: `${site.url}${p}/`, lastModified, changeFrequency: "monthly" as const, priority: priority(p) })),
+    ...collections.map((c) => ({ url: `${site.url}/collections/${c.slug}/`, lastModified, changeFrequency: "monthly" as const, priority: 0.8 })),
+    ...artworks.map((a) => ({ url: `${site.url}/artworks/${a.slug}/`, lastModified, changeFrequency: "monthly" as const, priority: 0.6 })),
+    ...articles.map((a) => ({ url: `${site.url}/journal/${a.slug}/`, lastModified: new Date(a.date), changeFrequency: "monthly" as const, priority: 0.5 })),
   ];
 }
 

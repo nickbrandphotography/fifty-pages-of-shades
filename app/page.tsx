@@ -15,7 +15,8 @@ export default function Home() {
           <div className="eyebrow mb-5">Fifty Pages of Shades · Nick Brand</div>
           <h1 className="font-serif text-5xl leading-[1.05] md:text-6xl">Form, abstracted.<br />The body as landscape.</h1>
           <p className="mt-6 max-w-md text-ink/60">
-            Black-and-white bodyscape art in limited editions — for collectors, designers and architects.
+            Black-and-white bodyscape art in limited editions by Sydney photographer Nick Brand — for collectors,
+            interior designers, corporate and healthcare spaces. Now showing at NITA Gallery, Surry Hills.
           </p>
           <div className="mt-8 flex gap-3">
             <Link href="/collections" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">View the Collections</Link>
@@ -38,6 +39,23 @@ export default function Home() {
             becomes terrain, light and pure shape. Tasteful and abstract, never explicit: the body as a study in
             form, not a subject of exposure.
           </p>
+        </div>
+      </section>
+
+      {/* Now showing */}
+      <section className="mx-auto max-w-content px-5 pt-20 md:px-10">
+        <div className="grid items-center gap-6 border border-line p-8 md:grid-cols-[1.4fr_1fr] md:p-10">
+          <div>
+            <div className="eyebrow mb-2">Now showing in Sydney</div>
+            <h2 className="font-serif text-3xl md:text-4xl">See Fifty Pages of Shades at NITA Gallery</h2>
+            <p className="mt-3 text-sm leading-relaxed text-ink/65">
+              Nick Brand's limited-edition bodyscapes are showing at NITA Gallery, 68 Campbell Street, Surry Hills.
+              See the scale, the tones and the framing in person, then arrange a private viewing for your project.
+            </p>
+          </div>
+          <div className="md:text-right">
+            <Link href="/about/exhibitions/" className="inline-block border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">Plan your visit</Link>
+          </div>
         </div>
       </section>
 
@@ -82,7 +100,7 @@ export default function Home() {
       </section>
 
       {/* Two-path */}
-      <section className="mx-auto grid max-w-content gap-6 px-5 pb-24 md:grid-cols-2 md:px-10">
+      <section className="mx-auto grid max-w-content gap-6 px-5 pb-24 md:grid-cols-3 md:px-10">
         <div className="border border-line p-10">
           <h3 className="font-serif text-3xl">For Collectors</h3>
           <p className="mt-3 text-ink/60">New to collecting, or deepening a collection? Explore the limited editions and acquire with confidence.</p>
@@ -92,6 +110,14 @@ export default function Home() {
           <h3 className="font-serif text-3xl">For Designers &amp; Architects</h3>
           <p className="mt-3 text-ink/60">Trade pricing, large-scale capability, and turnkey framing and delivery for residential, hospitality and corporate projects.</p>
           <Link href="/for-designers" className="mt-6 inline-block text-xs uppercase tracking-widest2 text-ink/70 hover:text-ink">Explore the Trade Program →</Link>
+        </div>
+        <div className="border border-line p-10">
+          <h3 className="font-serif text-3xl">For Corporate &amp; Healthcare</h3>
+          <p className="mt-3 text-ink/60">Calm, abstract black-and-white art for offices, hospitals and clinics. Custom sizes, no glass, delivered ready to hang.</p>
+          <div className="mt-6 flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/for-designers/corporate-art" className="inline-block text-xs uppercase tracking-widest2 text-ink/70 hover:text-ink">Corporate art →</Link>
+            <Link href="/healthcare-art" className="inline-block text-xs uppercase tracking-widest2 text-ink/70 hover:text-ink">Healthcare art →</Link>
+          </div>
         </div>
       </section>
     </>

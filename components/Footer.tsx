@@ -3,12 +3,13 @@ import { site } from "@/lib/site";
 
 const cols: { head: string; links: [string, string][] }[] = [
   { head: "Explore", links: [["Collections", "/collections"], ["Available Works", "/artworks"], ["Large Scale Art", "/large-scale-art"], ["Journal", "/journal"]] },
-  { head: "Trade", links: [["Designer Program", "/for-designers"], ["Corporate Art", "/for-designers/corporate-art"], ["Commissions", "/commissions"]] },
+  { head: "Trade", links: [["Designer Program", "/for-designers"], ["Corporate Art", "/for-designers/corporate-art"], ["Healthcare Art", "/healthcare-art"], ["Commissions", "/commissions"]] },
   { head: "Collectors", links: [["Collector Guide", "/collectors/collector-guide"], ["Investment", "/collectors/investment-in-photographic-art"], ["FAQ", "/resources/faq"], ["Glossary", "/resources/glossary"]] },
   { head: "Studio", links: [["About", "/about"], ["Exhibitions", "/about/exhibitions"], ["Press", "/about/press"], ["Testimonials", "/testimonials"], ["Contact", "/contact"]] },
 ];
 
 export default function Footer() {
+  const n = site.nita;
   return (
     <footer className="mt-28 border-t border-line bg-paper">
       <div className="mx-auto grid max-w-content gap-10 px-5 py-16 md:grid-cols-6 md:px-10">
@@ -17,6 +18,10 @@ export default function Footer() {
           <p className="mt-3 max-w-sm text-sm text-ink/60">
             Black-and-white fine art photography of the human form by Nick Brand. Limited editions on framed canvas,
             custom sizes, Australia-wide and worldwide delivery.
+          </p>
+          <p className="mt-4 max-w-sm text-sm text-ink/60">
+            <span className="text-ink/80">Now showing at <a href={n.url} className="underline">{n.name}</a></span><br />
+            {n.street}, {n.suburb} {n.region} {n.postcode}
           </p>
           <Link href="/contact/" className="mt-4 inline-block text-xs uppercase tracking-widest2 text-ink/70 hover:text-ink">Enquire →</Link>
         </div>

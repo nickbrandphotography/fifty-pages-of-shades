@@ -28,10 +28,12 @@ const groups: { title: string; items: { q: string; a: string }[] }[] = [
   { title: "Buying, pricing and delivery", items: [
     { q: "How much do the works cost?", a: "Prices are shown on each work and start from $1,700, with the final price set by the size and frame you choose." },
     { q: "How do I buy or enquire?", a: "Send an enquiry from any work. The studio replies personally, usually within one business day, to confirm price, reserve a piece, or answer questions." },
+    { q: "Where can I see the work in person in Sydney?", a: "Fifty Pages of Shades is showing at NITA Gallery, 68 Campbell Street, Surry Hills, Sydney. It is open Tuesday and Wednesday 10am to 6pm, Thursday 10am to 8pm, Friday 10am to 6pm, Saturday 10am to 3pm, and by appointment any day. See the exhibitions page for details." },
     { q: "Do you ship internationally?", a: "Yes. Delivery is Australia-wide and worldwide on request, packed and protected for safe transit." },
   ]},
   { title: "Trade and commissions", items: [
     { q: "Do you offer trade pricing for designers?", a: "Yes, for approved interior designers, architects, developers and art consultants. Apply for a trade account." },
+    { q: "Do you supply art for hospitals and healthcare facilities?", a: "Yes. The work is abstract black-and-white canvas with no glass front, in custom sizes. See the healthcare art page, or send us your facility's requirements." },
     { q: "Can I commission a bespoke work?", a: "Yes. Nick accepts a limited number of commissions each year, created within the abstract black-and-white language of the work." },
   ]},
 ];
