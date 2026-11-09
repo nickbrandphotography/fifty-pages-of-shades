@@ -1,16 +1,20 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Cormorant_Garamond, Inter } from "next/font/google";
 import AnnouncementBar from "@/components/AnnouncementBar";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import JsonLd from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
+const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500"], display: "swap", variable: "--font-serif" });
+const sans = Inter({ subsets: ["latin"], weight: ["400", "500"], display: "swap", variable: "--font-sans" });
+
 const ogImage = { url: "/artworks/hidden-seams.jpg", width: 1800, height: 1800, alt: "Hidden Seams, a black and white bodyscape by Nick Brand" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
-  title: { default: "Fifty Pages of Shades — Black-and-White Fine Art Photography, Sydney", template: "%s | Fifty Pages of Shades" },
+  title: { default: "Fifty Pages of Shades | Fine Art Photography, Sydney", template: "%s | Fifty Pages of Shades" },
   description: site.description,
   // "./" resolves to each page's own URL, so every page gets a self-referencing canonical.
   alternates: { canonical: "./" },
@@ -49,12 +53,7 @@ const siteSchema = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-AU">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
-      </head>
+    <html lang="en-AU" className={`${serif.variable} ${sans.variable}`}>
       <body>
         <JsonLd data={orgSchema} />
         <JsonLd data={personSchema} />

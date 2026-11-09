@@ -5,7 +5,7 @@ import { Lede, Section } from "@/components/Prose";
 import Faq from "@/components/Faq";
 
 export const metadata: Metadata = {
-  title: "Commission a Bodyscape — Bespoke Fine Art Photography",
+  title: "Commission a Bodyscape",
   description: "Commission an original black-and-white bodyscape for a home or project. Bespoke concept, custom size and framing, by Sydney artist Nick Brand.",
 };
 

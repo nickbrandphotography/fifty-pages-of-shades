@@ -7,7 +7,7 @@ import NitaNote from "@/components/NitaNote";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Trade Program for Interior Designers & Architects",
+  title: "Interior Designer Trade Program",
   description: "Trade pricing on Nick Brand's black-and-white bodyscape art for interior designers, architects and developers. Custom sizes, framed canvas, turnkey delivery.",
 };
 

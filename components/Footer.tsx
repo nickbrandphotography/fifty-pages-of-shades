@@ -5,7 +5,7 @@ const cols: { head: string; links: [string, string][] }[] = [
   { head: "Explore", links: [["Collections", "/collections"], ["Available Works", "/artworks"], ["Large Scale Art", "/large-scale-art"], ["Journal", "/journal"]] },
   { head: "Trade", links: [["Designer Program", "/for-designers"], ["Corporate Art", "/for-designers/corporate-art"], ["Healthcare Art", "/healthcare-art"], ["Commissions", "/commissions"]] },
   { head: "Collectors", links: [["Collector Guide", "/collectors/collector-guide"], ["Investment", "/collectors/investment-in-photographic-art"], ["FAQ", "/resources/faq"], ["Glossary", "/resources/glossary"]] },
-  { head: "Studio", links: [["About", "/about"], ["Exhibitions", "/about/exhibitions"], ["Press", "/about/press"], ["Testimonials", "/testimonials"], ["Contact", "/contact"]] },
+  { head: "Studio", links: [["About", "/about"], ["Exhibitions", "/about/exhibitions"], ["Contact", "/contact"]] },
 ];
 
 export default function Footer() {

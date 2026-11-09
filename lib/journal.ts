@@ -24,8 +24,8 @@ export const articles: Article[] = [
     dek: "A bodyscape is the human form seen as landscape. Here is what that means, how the work is made, and why it reads as abstract art rather than a nude.",
     date: "2026-05-12",
     readingMins: 4,
-    seoTitle: "What Is a Bodyscape? The Human Form as Landscape",
-    seoDescription: "A bodyscape is a photograph of the human form abstracted until it reads as landscape. What the genre is, how it is made, and why it is abstract — not nude — art.",
+    seoTitle: "What Is a Bodyscape?",
+    seoDescription: "A bodyscape is a photograph of the human form abstracted until it reads as landscape. What it is, how it is made, and why it is art, not nudity.",
     body: [
       { p: "A bodyscape is a photograph of the human form abstracted until it reads as landscape. Skin becomes terrain, a shoulder becomes a horizon, and the fall of light across the body reads the way light reads across a dune or a coastline. The subject is the human body; the subject matter is form — line, tone, shadow and texture." },
       { h2: "Landscape, not portrait" },
@@ -45,8 +45,8 @@ export const articles: Article[] = [
     dek: "What you actually pay for a fine art photograph, what drives the price, and where limited-edition bodyscapes sit.",
     date: "2026-05-19",
     readingMins: 4,
-    seoTitle: "How Much Does Fine Art Photography Cost in Australia?",
-    seoDescription: "What drives the price of fine art photography in Australia — edition size, print size and framing — and where limited-edition bodyscapes by Nick Brand sit.",
+    seoTitle: "Fine Art Photography Cost, Australia",
+    seoDescription: "What drives the price of fine art photography in Australia: edition size, print size and framing, and where Nick Brand's limited editions sit.",
     body: [
       { p: "Fine art photography in Australia spans a wide range, from a few hundred dollars for an open-edition print to tens of thousands for work by established names. For limited-edition work on canvas, the two biggest levers are the size of the piece and how it is framed. Bodyscapes by Nick Brand are priced from $1,700, with the final figure set by the size and frame you choose." },
       { h2: "What drives the price" },
@@ -66,8 +66,8 @@ export const articles: Article[] = [
     dek: "A simple, reliable method for getting the proportion and hanging height right — and why custom sizing makes it easy.",
     date: "2026-05-26",
     readingMins: 3,
-    seoTitle: "How to Choose the Right Size Art for Any Wall",
-    seoDescription: "A simple rule for choosing art size and hanging height for any wall, plus how custom-sized canvas takes the guesswork out of getting it right.",
+    seoTitle: "How to Choose the Right Size Art",
+    seoDescription: "A simple rule for choosing art size and hanging height for any wall, and how custom-sized canvas takes the guesswork out.",
     body: [
       { p: "The most common mistake in hanging art is going too small. A piece that looks generous in a gallery can disappear on a large wall at home. A simple rule fixes most situations: a feature artwork should fill roughly two-thirds of the wall or the furniture it sits above." },
       { h2: "The two-thirds rule" },

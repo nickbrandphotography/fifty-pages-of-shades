@@ -3,9 +3,12 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Lede, Section } from "@/components/Prose";
 import Faq from "@/components/Faq";
+import JournalLinks from "@/components/JournalLinks";
+import JsonLd from "@/components/JsonLd";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Is Fine Art Photography a Good Investment?",
+  title: "Fine Art Photography as Investment",
   description: "How limited-edition photography holds and builds value — scarcity, provenance and the artist's trajectory. An educational guide by Sydney artist Nick Brand.",
 };
 
@@ -21,6 +24,13 @@ const faqs = [
 export default function Investment() {
   return (
     <div className="mx-auto max-w-content px-5 py-16 md:px-10">
+      <JsonLd data={{
+        "@context": "https://schema.org", "@type": "Article", headline: "Is fine art photography a good investment?",
+        description: "How limited-edition photography holds and builds value: scarcity, provenance and the artist's trajectory. Educational, not financial advice.",
+        datePublished: "2026-06-16", dateModified: "2026-11-09", inLanguage: "en-AU",
+        author: { "@id": `${site.url}/#nick-brand` }, publisher: { "@id": `${site.url}/#organization` },
+        mainEntityOfPage: `${site.url}/collectors/investment-in-photographic-art/`,
+      }} />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Collectors" }, { label: "Investment in Photographic Art" }]} />
       <div className="eyebrow mb-3">Investment in Photographic Art</div>
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">Is fine art photography a good investment?</h1>
@@ -63,6 +73,7 @@ export default function Investment() {
         <h2 className="mb-6 font-serif text-3xl">Common questions</h2>
         <Faq items={faqs} />
       </div>
+      <JournalLinks heading="Related guides" />
       <p className="mt-10 max-w-2xl text-xs italic leading-relaxed text-ink/45">{disclaimer}</p>
       <div className="mt-10 flex gap-3">
         <Link href="/collectors/collector-guide/" className="border border-line px-6 py-3 text-xs uppercase tracking-widest2 text-ink/70 transition hover:border-ink hover:text-ink">Read the Collector Guide</Link>

@@ -38,5 +38,8 @@
 ## Editorial
 - Journal: https://www.fiftypagesofshades.com/journal/
 
+## Full reference
+- All key facts in one file: https://www.fiftypagesofshades.com/llms-full.txt
+
 ## Contact
 - Enquiries: https://www.fiftypagesofshades.com/contact/  (studio@fiftypagesofshades.com)

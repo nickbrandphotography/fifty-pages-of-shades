@@ -6,8 +6,8 @@ import Faq from "@/components/Faq";
 import NitaNote from "@/components/NitaNote";
 
 export const metadata: Metadata = {
-  title: "Corporate Art — Statement Photography for Workspaces",
-  description: "Curated black-and-white bodyscape art for offices, lobbies, hotels and developments. Custom sizes on framed canvas, trade terms, project-managed by Nick Brand's studio.",
+  title: "Corporate Art for Workspaces",
+  description: "Curated black-and-white art for offices, lobbies, hotels and developments. Custom sizes on framed canvas, trade terms, project-managed delivery.",
 };
 
 const faqs = [

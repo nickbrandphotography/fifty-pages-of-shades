@@ -8,8 +8,8 @@ import NitaNote from "@/components/NitaNote";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Art for Hospitals & Healthcare Spaces",
-  description: "Calm, abstract black-and-white art for hospitals, clinics and healthcare interiors. Glass-free framed canvas, custom sizes, project-managed delivery across Australia.",
+  title: "Art for Hospitals & Healthcare",
+  description: "Calm, abstract black-and-white art for hospitals, clinics and healthcare interiors. Glass-free framed canvas, custom sizes, delivered across Australia.",
 };
 
 // Only claims that follow from how the work is made. Facility-specific requirements are quoted per project.

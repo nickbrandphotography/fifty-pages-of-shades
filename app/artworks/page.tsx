@@ -4,7 +4,7 @@ import GalleryFilter from "@/components/GalleryFilter";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
-  title: "Available Works — Buy Black-and-White Fine Art Photography",
+  title: "Buy Black-and-White Art Photography",
   description: "Browse available black-and-white bodyscape and abstract artworks by Nick Brand. Limited editions on framed canvas, custom sizes, priced from.",
 };
 

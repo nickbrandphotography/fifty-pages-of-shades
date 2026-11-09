@@ -4,6 +4,7 @@ import Link from "next/link";
 import { articles, getArticle, formatDate } from "@/lib/journal";
 import ArticleBody from "@/components/ArticleBody";
 import Breadcrumbs from "@/components/Breadcrumbs";
+import JournalLinks from "@/components/JournalLinks";
 import JsonLd from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
@@ -41,6 +42,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         <span className="font-serif text-lg text-ink">Nick Brand</span> — Sydney fine-art photographer creating black-and-white
         bodyscapes of the human form, in limited editions. <Link href="/about/" className="underline">About the artist</Link>.
       </div>
+
+      <JournalLinks exclude={a.slug} heading="More guides" />
 
       <div className="mt-10 flex max-w-2xl flex-wrap gap-3">
         <Link href="/artworks/" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">View Available Works</Link>

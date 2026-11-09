@@ -7,8 +7,8 @@ import { exhibitions } from "@/lib/authority";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Now Showing at NITA Gallery, Surry Hills, Sydney",
-  description: "See Nick Brand's Fifty Pages of Shades at NITA Gallery, 68 Campbell Street, Surry Hills, Sydney. Opening hours, directions and how to arrange a private viewing.",
+  title: "Now Showing at NITA Gallery, Sydney",
+  description: "See Nick Brand's Fifty Pages of Shades at NITA Gallery, 68 Campbell Street, Surry Hills, Sydney. Opening hours, directions and private viewings.",
 };
 
 const n = site.nita;

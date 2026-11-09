@@ -4,8 +4,10 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { awards } from "@/lib/authority";
 
 export const metadata: Metadata = {
-  title: "Awards & Recognition — Nick Brand",
+  title: "Awards & Recognition",
   description: "Awards, recognition and collections featuring Nick Brand's bodyscape photography.",
+  // Placeholder page: keep it out of search results until there are real awards to list.
+  robots: awards.length > 0 ? undefined : { index: false, follow: true },
 };
 
 export default function Awards() {

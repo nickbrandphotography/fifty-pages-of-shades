@@ -3,9 +3,12 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Lede, Section } from "@/components/Prose";
 import Faq from "@/components/Faq";
+import JournalLinks from "@/components/JournalLinks";
+import JsonLd from "@/components/JsonLd";
+import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "The Collector's Guide to Buying Fine Art Photography",
+  title: "Guide to Buying Fine Art Photography",
   description: "How to buy fine art photography with confidence — editions, provenance, sizing, framing and value, explained plainly by Sydney artist Nick Brand.",
 };
 
@@ -19,6 +22,13 @@ const faqs = [
 export default function CollectorGuide() {
   return (
     <div className="mx-auto max-w-content px-5 py-16 md:px-10">
+      <JsonLd data={{
+        "@context": "https://schema.org", "@type": "Article", headline: "The Collector's Guide to Buying Fine Art Photography",
+        description: "How to buy fine art photography with confidence: editions, provenance, sizing, framing and value.",
+        datePublished: "2026-06-16", dateModified: "2026-11-09", inLanguage: "en-AU",
+        author: { "@id": `${site.url}/#nick-brand` }, publisher: { "@id": `${site.url}/#organization` },
+        mainEntityOfPage: `${site.url}/collectors/collector-guide/`,
+      }} />
       <Breadcrumbs items={[{ label: "Home", href: "/" }, { label: "Collectors" }, { label: "Collector Guide" }]} />
       <div className="eyebrow mb-3">Collector Guide</div>
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">The Collector's Guide to Buying Fine Art Photography</h1>
@@ -69,6 +79,7 @@ export default function CollectorGuide() {
         <Faq items={faqs} />
       </div>
 
+      <JournalLinks heading="Related guides" />
       <div className="mt-12 flex gap-3">
         <Link href="/artworks/" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">View Available Works</Link>
         <Link href="/contact/" className="border border-line px-6 py-3 text-xs uppercase tracking-widest2 text-ink/70 transition hover:border-ink hover:text-ink">Enquire</Link>

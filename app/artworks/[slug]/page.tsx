@@ -6,6 +6,7 @@ import ArtworkExperience from "@/components/ArtworkExperience";
 import ArtworkCard from "@/components/ArtworkCard";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import NitaNote from "@/components/NitaNote";
+import JournalLinks from "@/components/JournalLinks";
 import JsonLd from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
@@ -16,10 +17,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const a = getArtwork(slug);
   if (!a) return {};
+  // Keep titles within ~60 characters: use the longest form that fits.
+  const brand = "Fifty Pages of Shades";
+  const title = [`${a.title} — Limited Edition Bodyscape | ${brand}`, `${a.title} | ${brand}`, a.title].find((t) => t.length <= 60) ?? a.title;
+  const price = formatAUD(fromPrice(a.orientation));
+  const description = [
+    `${a.description} ${a.size}, ${a.medium}, edition of ${a.editionSize}. From ${price}.`,
+    `${a.description} ${a.size}, edition of ${a.editionSize}. From ${price}.`,
+    `${a.size} limited edition by Nick Brand, edition of ${a.editionSize}. From ${price}.`,
+  ].find((d) => d.length <= 155) ?? a.description;
   return {
-    title: `${a.title} — Limited Edition Bodyscape`,
-    description: `${a.description} ${a.size}, ${a.medium}, edition of ${a.editionSize}. From ${formatAUD(fromPrice(a.orientation))}.`,
-    openGraph: { images: [a.image] },
+    title: { absolute: title },
+    description,
+    openGraph: { title: a.title, description, images: [a.image] },
   };
 }
 
@@ -103,6 +113,17 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
       </div>
 
       <NitaNote audience={`See ${a.title} and the rest of the series in person.`} />
+
+      <JournalLinks heading="Guides for buyers" />
+
+      <nav aria-label="All works" className="mt-12 max-w-3xl border-t border-line pt-8">
+        <div className="eyebrow mb-3">More works by Nick Brand</div>
+        <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm">
+          {artworks.filter((x) => x.slug !== a.slug).map((x) => (
+            <li key={x.slug}><Link href={`/artworks/${x.slug}/`} className="underline underline-offset-4 hover:text-ink/70">{x.title}</Link></li>
+          ))}
+        </ul>
+      </nav>
 
       {/* Related */}
       {related(a).length > 0 && (

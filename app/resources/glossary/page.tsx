@@ -4,7 +4,7 @@ import JsonLd from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Glossary of Fine Art Photography & Collecting Terms",
+  title: "Fine Art Photography Glossary",
   description: "Plain-English definitions of bodyscape, edition, provenance, giclée, archival, certificate of authenticity and more — for collectors and designers.",
 };
 

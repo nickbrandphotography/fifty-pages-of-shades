@@ -6,8 +6,8 @@ import JsonLd from "@/components/JsonLd";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "About Nick Brand — Fine Art Bodyscape Photographer, Sydney",
-  description: "Nick Brand is a Sydney fine-art photographer with 20+ years' experience, creating black-and-white bodyscapes — abstract studies of the human form, in limited editions.",
+  title: "Nick Brand, Sydney Art Photographer",
+  description: "Nick Brand is a Sydney fine-art photographer with 20+ years' experience, creating black-and-white bodyscapes in limited editions.",
 };
 
 const personSchema = {

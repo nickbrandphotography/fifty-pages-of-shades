@@ -5,8 +5,10 @@ import JsonLd from "@/components/JsonLd";
 import { testimonials } from "@/lib/authority";
 
 export const metadata: Metadata = {
-  title: "Testimonials — Collectors & Designers on Fifty Pages of Shades",
+  title: "Testimonials",
   description: "What collectors, interior designers and clients say about Nick Brand's bodyscape art and working with the studio.",
+  // Placeholder page: keep it out of search results until there are real testimonials.
+  robots: testimonials.length > 0 ? undefined : { index: false, follow: true },
 };
 
 export default function Testimonials() {

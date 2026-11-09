@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: { params: Promise<{ collectio
   const { collection } = await params;
   const c = getCollection(collection);
   if (!c) return {};
-  return { title: `${c.title} — Nick Brand`, description: c.intro };
+  return { title: `${c.title} Collection`, description: `${c.title}: ${c.tagline} ${c.count} limited-edition black-and-white works by Nick Brand, on framed canvas.` };
 }
 
 export default async function CollectionPage({ params }: { params: Promise<{ collection: string }> }) {

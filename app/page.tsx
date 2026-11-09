@@ -3,6 +3,7 @@ import Image from "next/image";
 import { collections, featured, artworks } from "@/lib/catalog";
 import CollectionTile from "@/components/CollectionTile";
 import ArtworkCard from "@/components/ArtworkCard";
+import { articles } from "@/lib/journal";
 
 export default function Home() {
   const hero = featured()[0] ?? artworks[0];
@@ -97,6 +98,20 @@ export default function Home() {
           {strip.map((a) => <ArtworkCard key={a.slug} a={a} />)}
         </div>
         <div className="mt-12"><Link href="/artworks" className="border border-ink px-6 py-3 text-xs uppercase tracking-widest2 transition hover:bg-ink hover:text-paper">View All Available Works</Link></div>
+      </section>
+
+      {/* From the journal */}
+      <section className="mx-auto max-w-content px-5 pb-24 md:px-10">
+        <div className="eyebrow mb-2">From the Journal</div>
+        <h2 className="mb-8 font-serif text-4xl">Guides for buyers and designers</h2>
+        <ul className="grid gap-6 md:grid-cols-3">
+          {articles.map((a) => (
+            <li key={a.slug} className="border border-line p-6">
+              <Link href={`/journal/${a.slug}/`} className="font-serif text-xl underline-offset-4 hover:underline">{a.title}</Link>
+              <p className="mt-2 text-sm text-ink/60">{a.dek}</p>
+            </li>
+          ))}
+        </ul>
       </section>
 
       {/* Two-path */}

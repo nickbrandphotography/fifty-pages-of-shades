@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import Faq from "@/components/Faq";
+import JournalLinks from "@/components/JournalLinks";
 
 export const metadata: Metadata = {
-  title: "Frequently Asked Questions — Buying Bodyscape Art",
+  title: "FAQ: Buying Bodyscape Art",
   description: "Answers on bodyscape art, limited editions, sizing, framing, pricing, delivery, trade and commissions — by Sydney artist Nick Brand.",
 };
 
@@ -54,6 +55,7 @@ export default function FAQPage() {
           </div>
         ))}
       </div>
+      <JournalLinks heading="Guides from the journal" />
       <div className="hidden"><Faq items={all} /></div>
     </div>
   );

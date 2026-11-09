@@ -3,9 +3,10 @@ import Link from "next/link";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { Lede, Section } from "@/components/Prose";
 import Faq from "@/components/Faq";
+import JournalLinks from "@/components/JournalLinks";
 
 export const metadata: Metadata = {
-  title: "Large Scale Art — Statement Black-and-White Canvas",
+  title: "Large Scale Black-and-White Art",
   description: "Oversized black-and-white bodyscape art for feature walls, lobbies and large spaces. Printed on canvas in custom sizes, gallery-framed and ready to hang.",
 };
 
@@ -51,6 +52,7 @@ export default function LargeScale() {
         <h2 className="mb-6 font-serif text-3xl">Common questions</h2>
         <Faq items={faqs} />
       </div>
+      <JournalLinks heading="Related guides" />
       <div className="mt-12 flex gap-3">
         <Link href="/artworks/" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">View Available Works</Link>
         <Link href="/for-designers/" className="border border-line px-6 py-3 text-xs uppercase tracking-widest2 text-ink/70 transition hover:border-ink hover:text-ink">Designer Trade Program</Link>
