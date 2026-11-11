@@ -12,7 +12,7 @@ const terms: [string, string][] = [
   ["Abstract photographic art", "Photography valued for its formal qualities — light, line, tone, texture — rather than for depicting a recognisable subject."],
   ["Limited edition", "A work released in a fixed, stated number of prints, after which the edition is closed and never reprinted."],
   ["Open edition", "A work reproduced without a fixed limit; not scarce, and generally not collectible in the investment sense."],
-  ["Edition number", "The unique number of an individual print within its edition, written as, for example, 3/15 (the third of fifteen)."],
+  ["Edition number", "The unique number of an individual print within its edition, written as, for example, 3/50 (the third of fifty)."],
   ["Artist's proof (AP)", "A small number of prints made alongside the numbered edition for the artist's use, marked AP and sitting outside the edition count."],
   ["Certificate of authenticity (COA)", "A signed document recording a work's title, edition number and details, confirming it is a genuine, authorised print."],
   ["Provenance", "The documented ownership history of an artwork, supporting its authenticity and value."],

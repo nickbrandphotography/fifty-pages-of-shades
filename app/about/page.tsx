@@ -40,7 +40,7 @@ export default function AboutPage() {
             <p>Working entirely in black and white, Nick strips each image to its essentials. Monochrome removes the
               distraction of colour and leaves only what matters: light, shadow, line and texture. What remains is a
               study in form that is quiet, deliberate and timeless.</p>
-            <p>Each work is printed as a limited edition of 15 on premium canvas, gallery-framed and wired ready to
+            <p>Each work is printed as a limited edition of 50 on premium canvas, gallery-framed and wired ready to
               hang, in custom sizes with a choice of frames. Every piece is accompanied by a signed Certificate of
               Authenticity and a provenance record.</p>
             <p className="text-ink/80">The collection sits somewhere between abstract photography and contemporary fine art,

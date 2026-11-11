@@ -35,7 +35,7 @@ export const articles: Article[] = [
       { h2: "Images that reward a second look" },
       { p: "The photographs in Fifty Pages of Shades are entirely non-explicit and often surprisingly difficult to interpret. That is deliberate. They sit somewhere between abstract photography and contemporary fine art, and each viewer tends to see something different. They hang comfortably in living rooms, lobbies, hotels and healthcare spaces. To see how the terms differ, see the [Glossary](/resources/glossary/)." },
       { h2: "How they are collected" },
-      { p: "Each work by Nick Brand is produced as a strictly limited edition of 15, printed on framed canvas in custom sizes, numbered and accompanied by a certificate of authenticity. If you are new to collecting, the [Collector Guide](/collectors/collector-guide/) explains editions, provenance and how to buy with confidence, or you can [explore the collection](/collections/)." },
+      { p: "Each work by Nick Brand is produced as a strictly limited edition of 50, printed on framed canvas in custom sizes, numbered and accompanied by a certificate of authenticity. If you are new to collecting, the [Collector Guide](/collectors/collector-guide/) explains editions, provenance and how to buy with confidence, or you can [explore the collection](/collections/)." },
     ],
   },
   {
@@ -52,7 +52,7 @@ export const articles: Article[] = [
       { h2: "What drives the price" },
       { p: "Three things matter most. First, the artist and their trajectory — recognition and demand lift prices over time. Second, the edition size — the scarcer the edition, the more each work commands. Third, the physical piece itself — a larger canvas in a premium frame costs more to produce and to own than a smaller, unframed one." },
       { h2: "Why edition size matters" },
-      { p: "A photograph released in an edition of 15 is far scarcer than the same image in an edition of 200, and that scarcity is reflected in both price and long-term value. Edition size is stated openly on every work, so you always know exactly how rare a piece is. The [Collector Guide](/collectors/collector-guide/) explains this in full." },
+      { p: "A photograph released in an edition of 50 is far scarcer than the same image in an edition of 200, and that scarcity is reflected in both price and long-term value. Edition size is stated openly on every work, so you always know exactly how rare a piece is. The [Collector Guide](/collectors/collector-guide/) explains this in full." },
       { h2: "Size and framing" },
       { p: "Because the work is printed on canvas, almost any size is possible, and price scales with it. Framing is part of the price too: a gallery-wrapped canvas sits at the lower end, while a black, oak or white floating frame adds a finished, ready-to-hang result. On each artwork page you can choose a size and frame and watch the price update live." },
       { h2: "Is it worth it?" },

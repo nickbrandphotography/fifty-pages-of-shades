@@ -85,7 +85,7 @@ export default function Home() {
         <p className="max-w-3xl text-ink/65">
           Some images reveal themselves immediately. Others invite you to look again. Fifty Pages of Shades is a distinctive
           collection of contemporary black-and-white fine-art photography, created for considered interiors and printed as
-          limited editions of 15.
+          limited editions of 50.
         </p>
         <div className="mt-8"><Link href="/collections" className="border border-ink px-6 py-3 text-xs uppercase tracking-widest2 transition hover:bg-ink hover:text-paper">View the Collection</Link></div>
       </section>
@@ -94,7 +94,7 @@ export default function Home() {
       <section className="border-y border-line bg-ink/[0.02]">
         <div className="mx-auto grid max-w-content gap-10 px-5 py-20 md:grid-cols-3 md:px-10">
           {[
-            ["Limited & Numbered", "Every work is released in a strictly limited edition of 15 and individually numbered. When an edition closes, it closes permanently."],
+            ["Limited & Numbered", "Every work is released in a strictly limited edition of 50 and individually numbered. When an edition closes, it closes permanently."],
             ["Made at Scale, Built to Last", "Printed in black and white on premium canvas and gallery-framed. Custom sizes and a choice of frames finish each work for its space."],
             ["Provenance & Authenticity", "Each piece ships with a signed Certificate of Authenticity and a documented provenance record."],
           ].map(([t, d]) => (

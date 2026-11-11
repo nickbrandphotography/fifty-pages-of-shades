@@ -52,13 +52,13 @@ export default function Investment() {
           works can become more sought-after. Backing an artist early is where collectors have historically found value.</p>
       </Section>
       <Section title="Why limited editions appreciate (when they do)">
-        <p>The mechanism is simple supply and demand. Once an edition of 15 is sold, no more exist. If demand for the artist or
+        <p>The mechanism is simple supply and demand. Once an edition of 50 is sold, no more exist. If demand for the artist or
           the image grows, buyers compete for a finite number of works, and the secondary-market price can rise above the
           original. Open editions, with unlimited supply, do not behave this way.</p>
       </Section>
       <Section title="Where Fifty Pages of Shades sits">
         <p>Nick Brand is a Sydney photographer with more than twenty years' experience, building a focused body of
-          black-and-white abstract photographic work released in strictly limited editions of 15. The recognition is early-stage and
+          black-and-white abstract photographic work released in strictly limited editions of 50. The recognition is early-stage and
           growing — the work is currently shown across a number of Sydney businesses and held in private collections. For
           collectors, that combination — a committed artist, a distinctive body of work, and an early point in the trajectory —
           is precisely the stage at which acquiring is most interesting.</p>

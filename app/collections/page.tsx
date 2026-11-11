@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Abstract Black & White Photography",
-  description: "Contemporary monochrome wall art: abstract black-and-white photography by Nick Brand. Limited editions of 15 on framed canvas, showing at NITA Gallery, Sydney.",
+  description: "Contemporary monochrome wall art: abstract black-and-white photography by Nick Brand. Limited editions of 50 on framed canvas, showing at NITA Gallery, Sydney.",
 };
 
 const paths: { head: string; body: string; href: string; cta: string }[] = [
@@ -82,7 +82,7 @@ export default function CollectionsPage() {
             distinctive alternative to conventional decorative wall art.
           </p>
           <p>
-            Each work is produced as a limited edition of 15, printed on canvas in a range of formats and bespoke dimensions,
+            Each work is produced as a limited edition of 50, printed on canvas in a range of formats and bespoke dimensions,
             professionally framed and accompanied by a signed Certificate of Authenticity.
           </p>
         </div>

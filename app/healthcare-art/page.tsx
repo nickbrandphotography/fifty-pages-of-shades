@@ -60,7 +60,7 @@ export default function HealthcareArt() {
           overhead lighting and no glass to break.</p>
         <p><strong>Made to fit.</strong> Almost any dimension, with a choice of black, natural oak or white frames, or no frame
           (gallery wrap), so the work suits the wall and the palette of the fit-out.</p>
-        <p><strong>Authentic and documented.</strong> Each work is a limited edition of 15, with a signed Certificate of
+        <p><strong>Authentic and documented.</strong> Each work is a limited edition of 50, with a signed Certificate of
           Authenticity and a provenance record, which supports asset registers and art policies.</p>
       </Section>
 

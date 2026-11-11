@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 const faqs = [
-  { q: "What is a limited edition?", a: "A work released in a fixed number of prints — for example, an edition of 15. Once all are sold, the edition closes permanently and is never reprinted, which is what makes the work scarce and collectible." },
+  { q: "What is a limited edition?", a: "A work released in a fixed number of prints — for example, an edition of 50. Once all are sold, the edition closes permanently and is never reprinted, which is what makes the work scarce and collectible." },
   { q: "Why does edition size matter to value?", a: "The smaller the edition, the rarer each individual work — a key driver of long-term value in collectible photography." },
   { q: "How much does fine art photography cost?", a: "Prices vary with the artist, edition size, and — for work on canvas — the size and framing. Works are priced from $750, with the final price set by the size and frame you choose." },
   { q: "Do the works come with a certificate?", a: "Yes. Every piece includes a signed Certificate of Authenticity and a provenance record stating the title, edition number and details." },
@@ -43,12 +43,12 @@ export default function CollectorGuide() {
           decorative print has none of these — which is why a genuine limited edition holds value in a way a poster never will.</p>
       </Section>
       <Section title="Limited edition vs open edition">
-        <p>A limited edition is released in a fixed number of prints — for Fifty Pages of Shades, an edition of 15 — after which the
+        <p>A limited edition is released in a fixed number of prints — for Fifty Pages of Shades, an edition of 50 — after which the
           edition closes permanently and is never reprinted. An open edition has no limit and can be reproduced indefinitely.
           Scarcity is the difference, and scarcity is what underpins long-term value.</p>
       </Section>
       <Section title="Why edition size matters to value">
-        <p>The smaller the edition, the rarer each individual work. A piece in an edition of 15 is scarcer — and typically
+        <p>The smaller the edition, the rarer each individual work. A piece in an edition of 50 is scarcer — and typically
           more valuable over time — than the same image in an edition of 200. Edition size is one of the clearest signals of
           how collectible a photograph really is, which is why it is stated openly on every work.</p>
       </Section>
