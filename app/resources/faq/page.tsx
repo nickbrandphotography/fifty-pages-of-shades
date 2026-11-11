@@ -4,19 +4,19 @@ import Faq from "@/components/Faq";
 import JournalLinks from "@/components/JournalLinks";
 
 export const metadata: Metadata = {
-  title: "FAQ: Buying Bodyscape Art",
-  description: "Answers on bodyscape art, limited editions, sizing, framing, pricing, delivery, trade and commissions — by Sydney artist Nick Brand.",
+  title: "FAQ: Buying Abstract Art Photography",
+  description: "Answers on abstract photographic art, limited editions, sizing, framing, pricing, delivery, trade and commissions — by Sydney artist Nick Brand.",
 };
 
 const groups: { title: string; items: { q: string; a: string }[] }[] = [
   { title: "About the work", items: [
-    { q: "What is a bodyscape?", a: "A bodyscape is a photograph of the human form abstracted until it reads as landscape — skin, light and line composed so the body becomes terrain rather than portrait. Nick Brand's bodyscapes are made in black and white." },
-    { q: "Are bodyscapes nude photography?", a: "No. They are abstract fine-art studies of form. The body is the material, not the subject; the work is tasteful and abstract, not nude, boudoir or glamour photography." },
+    { q: "What is Fifty Pages of Shades?", a: "Fifty Pages of Shades is a collection of contemporary black-and-white abstract photographic art by Sydney photographer Nick Brand, exploring form, texture, light and shadow. Each work is a limited edition of 15 on framed canvas." },
+    { q: "Is the work explicit?", a: "No. The images are entirely non-explicit and often surprisingly difficult to interpret. They sit between abstract photography and contemporary fine art, and suit homes, hotels, offices and healthcare spaces." },
     { q: "What is abstract photographic art?", a: "Photography made for its formal qualities — light, line, tone and texture — rather than to depict a recognisable subject." },
     { q: "Why black and white?", a: "Monochrome removes the distraction of colour, leaving light, shadow, line and texture — which lets the body read as pure form." },
   ]},
   { title: "Editions and authenticity", items: [
-    { q: "What is a limited edition?", a: "A fixed number of prints of a work — for Bodyscapes, an edition of 15. Once all are sold, the edition closes permanently and is never reprinted, which makes each work scarce." },
+    { q: "What is a limited edition?", a: "A fixed number of prints of a work — for this collection, an edition of 15. Once all are sold, the edition closes permanently and is never reprinted, which makes each work scarce." },
     { q: "Why does edition size matter?", a: "The smaller the edition, the rarer each work — a key driver of collectible value over time." },
     { q: "Do works come with a certificate of authenticity?", a: "Yes. Every work includes a signed Certificate of Authenticity and a provenance record stating the title, edition number and details." },
   ]},

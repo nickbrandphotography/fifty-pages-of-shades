@@ -10,7 +10,7 @@ import { site } from "@/lib/site";
 const serif = Cormorant_Garamond({ subsets: ["latin"], weight: ["400", "500"], display: "swap", variable: "--font-serif" });
 const sans = Inter({ subsets: ["latin"], weight: ["400", "500"], display: "swap", variable: "--font-sans" });
 
-const ogImage = { url: "/artworks/hidden-seams.jpg", width: 1800, height: 1800, alt: "Hidden Seams, a black and white bodyscape by Nick Brand" };
+const ogImage = { url: "/artworks/hidden-seams.jpg", width: 1800, height: 1800, alt: "Hidden Seams, a black and white abstract photograph by Nick Brand" };
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),
@@ -32,7 +32,7 @@ const orgSchema = {
   email: site.email,
   sameAs: site.sameAs,
   areaServed: [{ "@type": "Country", name: "Australia" }, { "@type": "Place", name: "Worldwide" }],
-  knowsAbout: ["Fine art photography", "Bodyscape photography", "Black-and-white photography", "Limited edition art", "Art for interiors", "Corporate art", "Healthcare art"],
+  knowsAbout: ["Fine art photography", "Abstract photography", "Black-and-white photography", "Limited edition art", "Art for interiors", "Corporate art", "Healthcare art"],
   contactPoint: { "@type": "ContactPoint", contactType: "sales", email: site.email, areaServed: "AU", availableLanguage: "English" },
   location: {
     "@type": "ArtGallery", name: site.nita.name, url: site.nita.url,

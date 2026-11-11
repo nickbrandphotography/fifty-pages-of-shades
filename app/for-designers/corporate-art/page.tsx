@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 const faqs = [
   { q: "Do you supply art for offices and commercial spaces?", a: "Yes. Fifty Pages of Shades provides original black-and-white art for corporate, hospitality and commercial interiors, at scale, project-managed end to end." },
   { q: "Can you handle multi-site or large orders?", a: "Yes, including cohesive schemes across floors, buildings or sites, and the same image scaled across spaces." },
-  { q: "Is the work appropriate for a professional setting?", a: "Yes. It is abstract, tasteful monochrome form — distinctive and universally appropriate, never nude or boudoir." },
+  { q: "Is the work appropriate for a professional setting?", a: "Yes. It is abstract, entirely non-explicit monochrome art, distinctive and well suited to public, professional settings." },
 ];
 
 export default function CorporateArt() {
@@ -29,7 +29,7 @@ export default function CorporateArt() {
 
       <Section title="Why companies choose Fifty Pages of Shades">
         <p><strong>Brand-safe and universal.</strong> Abstract monochrome form suits any corporate environment — distinctive
-          without being divisive. Never nude or boudoir; always appropriate for a public, professional setting.</p>
+          without being divisive. Entirely non-explicit and well suited to a public, professional setting.</p>
         <p><strong>Built for scale.</strong> Printed on canvas, the work commands large reception walls and lobbies while
           staying light and easy to install.</p>
         <p><strong>Project-managed.</strong> One point of contact from selection to install: sizing, framing, delivery and

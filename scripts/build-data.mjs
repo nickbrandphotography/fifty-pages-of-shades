@@ -32,11 +32,11 @@ const pricing = { landscape: [], square: [] };
 for (const p of P) pricing[p.aspect]?.push({ size: p.size_label, frame: p.frame, price: +p.price_aud, status: p.price_status });
 const frames = [...new Set(pricing.landscape.map(p => p.frame))];
 const meta = {
-  bodyscapes: { title: "Bodyscapes", tagline: "The body as terrain. The signature series.",
-    intro: "Bodyscapes is the series at the heart of this work: the human form photographed until it reads as landscape. A shoulder becomes a horizon, a curve becomes a dune, and light moves across skin the way it moves across sand." },
-  "abstract-forms": { title: "Abstract Forms", tagline: "Where the figure dissolves into pure light and line.",
-    intro: "Where Bodyscapes keeps a trace of the figure, Abstract Forms lets it go entirely. These works push past the recognisable into pure photographic abstraction — light, line and texture, composed for their own sake." },
+  "fifty-pages-of-shades": { title: "Fifty Pages of Shades", tagline: "The Art of the Unseen Form.",
+    intro: "Contemporary black-and-white abstract photographic art by Nick Brand, exploring form, texture, light and shadow." },
 };
+// All works belong to the single Fifty Pages of Shades collection.
+for (const a of artworks) a.collection = "fifty-pages-of-shades";
 const collections = Object.entries(meta).map(([slug, m]) => ({ slug, ...m, count: artworks.filter(a => a.collection === slug).length }));
 fs.writeFileSync("data/catalog.json", JSON.stringify({ artworks, collections, pricing, frames }, null, 2));
 console.log(`catalog.json written — ${artworks.length} works, ${collections.length} collections`);

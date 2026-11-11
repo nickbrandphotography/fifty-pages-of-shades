@@ -5,7 +5,7 @@ import { press } from "@/lib/authority";
 
 export const metadata: Metadata = {
   title: "Press & Media",
-  description: "Press, features and media on Nick Brand's bodyscape photography. Media enquiries and press kit available on request.",
+  description: "Press, features and media on Nick Brand's photography. Media enquiries and press kit available on request.",
   // Placeholder page: keep it out of search results until there is real press to list.
   robots: press.length > 0 ? undefined : { index: false, follow: true },
 };

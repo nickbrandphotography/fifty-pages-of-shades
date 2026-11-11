@@ -5,11 +5,10 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Fine Art Photography Glossary",
-  description: "Plain-English definitions of bodyscape, edition, provenance, giclée, archival, certificate of authenticity and more — for collectors and designers.",
+  description: "Plain-English definitions of abstract photography, edition, provenance, giclée, archival, certificate of authenticity and more — for collectors and designers.",
 };
 
 const terms: [string, string][] = [
-  ["Bodyscape", "A photograph of the human form abstracted until it reads as landscape; skin, light and line composed so the body becomes terrain. A genre of fine-art photography, distinct from nude or portrait work."],
   ["Abstract photographic art", "Photography valued for its formal qualities — light, line, tone, texture — rather than for depicting a recognisable subject."],
   ["Limited edition", "A work released in a fixed, stated number of prints, after which the edition is closed and never reprinted."],
   ["Open edition", "A work reproduced without a fixed limit; not scarce, and generally not collectible in the investment sense."],
@@ -30,7 +29,7 @@ const terms: [string, string][] = [
 
 export default function Glossary() {
   const schema = {
-    "@context": "https://schema.org", "@type": "DefinedTermSet", name: "Bodyscapes Glossary",
+    "@context": "https://schema.org", "@type": "DefinedTermSet", name: "Fine Art Photography Glossary",
     url: `${site.url}/resources/glossary`,
     hasDefinedTerm: terms.map(([t, d]) => ({ "@type": "DefinedTerm", name: t, description: d })),
   };

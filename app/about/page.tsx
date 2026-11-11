@@ -7,13 +7,13 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Nick Brand, Sydney Art Photographer",
-  description: "Nick Brand is a Sydney fine-art photographer with 20+ years' experience, creating black-and-white bodyscapes in limited editions.",
+  description: "Nick Brand is a Sydney fine-art photographer with 20+ years' experience, creating black-and-white abstract photographic art in limited editions.",
 };
 
 const personSchema = {
   "@context": "https://schema.org", "@type": "Person", name: "Nick Brand",
   jobTitle: "Fine Art Photographer", address: { "@type": "PostalAddress", addressLocality: "Sydney", addressCountry: "AU" },
-  description: "Sydney fine-art photographer creating black-and-white abstract bodyscapes of the human form, in strictly limited editions.",
+  description: "Sydney fine-art photographer creating black-and-white abstract photographic art in strictly limited editions.",
 };
 
 export default function AboutPage() {
@@ -29,23 +29,22 @@ export default function AboutPage() {
           <div className="eyebrow mb-3">The artist behind Fifty Pages of Shades</div>
           <h1 className="font-serif text-5xl leading-tight">Nick Brand</h1>
           <p className="mt-6 font-serif text-2xl leading-relaxed text-ink/85">
-            Nick Brand is a Sydney fine-art photographer with more than twenty years behind the camera. Bodyscapes
-            is the body of work he returns to again and again: the human form as abstraction, photographed in black
-            and white and treated the way a landscape photographer treats a coastline or a dune field.
+            Nick Brand is a Sydney fine-art photographer with more than twenty years behind the camera. Fifty Pages of
+            Shades is the body of work he returns to again and again: contemporary black-and-white abstract photography
+            exploring form, texture, light and shadow.
           </p>
           <div className="mt-8 space-y-5 text-ink/65">
-            <p>Every bodyscape begins with a refusal of the obvious. Nick photographs the body not to depict a person,
-              but to find the landscape hidden in it — the ridge of a shoulder reading as a horizon, the fall of light
-              across skin reading as weather.</p>
+            <p>Every image begins with a refusal of the obvious. Nick looks for the form hidden inside a familiar shape,
+              so that the original subject becomes secondary to the photograph itself. The results are often surprisingly
+              difficult to interpret, and each viewer tends to see something different.</p>
             <p>Working entirely in black and white, Nick strips each image to its essentials. Monochrome removes the
-              distraction of colour and leaves only what matters — light, shadow, line and texture. What remains is a
-              study in form: quiet, deliberate, and timeless.</p>
+              distraction of colour and leaves only what matters: light, shadow, line and texture. What remains is a
+              study in form that is quiet, deliberate and timeless.</p>
             <p>Each work is printed as a limited edition of 15 on premium canvas, gallery-framed and wired ready to
               hang, in custom sizes with a choice of frames. Every piece is accompanied by a signed Certificate of
               Authenticity and a provenance record.</p>
-            <p className="text-ink/80">The work is abstract and tasteful — celebrating the human form as a source of
-              line, light and texture, not as nudity, and not as boudoir or glamour photography. The body is the
-              material; form is the subject.</p>
+            <p className="text-ink/80">The collection sits somewhere between abstract photography and contemporary fine art,
+              and is entirely non-explicit. It is currently showing at NITA Gallery in Surry Hills, Sydney.</p>
           </div>
           <div className="mt-10 flex gap-3">
             <Link href="/artworks" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">View the Works</Link>

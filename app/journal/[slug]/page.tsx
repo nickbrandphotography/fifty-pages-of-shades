@@ -40,7 +40,7 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
 
       <div className="mt-14 max-w-2xl border-t border-line pt-6 text-sm text-ink/60">
         <span className="font-serif text-lg text-ink">Nick Brand</span> — Sydney fine-art photographer creating black-and-white
-        bodyscapes of the human form, in limited editions. <Link href="/about/" className="underline">About the artist</Link>.
+        abstract photographic art in limited editions. <Link href="/about/" className="underline">About the artist</Link>.
       </div>
 
       <JournalLinks exclude={a.slug} heading="More guides" />

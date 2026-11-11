@@ -25,11 +25,11 @@ export default function GalleryFilter({ artworks, collections }: {
   return (
     <div>
       <div className="mb-10 flex flex-wrap items-center gap-2">
-        <button className={pill(coll === "all")} onClick={() => setColl("all")}>All</button>
-        {collections.map((c) => (
+        {collections.length > 1 && <button className={pill(coll === "all")} onClick={() => setColl("all")}>All</button>}
+        {collections.length > 1 && collections.map((c) => (
           <button key={c.slug} className={pill(coll === c.slug)} onClick={() => setColl(c.slug)}>{c.title}</button>
         ))}
-        <span className="mx-2 h-4 w-px bg-line" />
+        {collections.length > 1 && <span className="mx-2 h-4 w-px bg-line" />}
         <button className={pill(orient === "all")} onClick={() => setOrient("all")}>Any shape</button>
         <button className={pill(orient === "landscape")} onClick={() => setOrient("landscape")}>Landscape</button>
         <button className={pill(orient === "square")} onClick={() => setOrient("square")}>Square</button>

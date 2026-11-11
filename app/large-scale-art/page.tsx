@@ -7,7 +7,7 @@ import JournalLinks from "@/components/JournalLinks";
 
 export const metadata: Metadata = {
   title: "Large Scale Black-and-White Art",
-  description: "Oversized black-and-white bodyscape art for feature walls, lobbies and large spaces. Printed on canvas in custom sizes, gallery-framed and ready to hang.",
+  description: "Oversized black-and-white abstract art for feature walls, lobbies and large spaces. Printed on canvas in custom sizes, gallery-framed and ready to hang.",
 };
 
 const faqs = [
@@ -23,7 +23,7 @@ export default function LargeScale() {
       <div className="eyebrow mb-3">Large Scale Art</div>
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">Made for the wall it will command</h1>
       <Lede>
-        Bodyscapes are conceived at scale. Printed on canvas, the work goes large without losing depth or detail — suited to
+        The work is conceived at scale. Printed on canvas, it goes large without losing depth or detail — suited to
         feature walls, lobbies, voids, stairwells and double-height spaces. Custom sizes mean a piece can be made to command
         its wall exactly, gallery-framed and delivered ready to hang.
       </Lede>
@@ -31,7 +31,7 @@ export default function LargeScale() {
       <Section title="Why canvas, why scale">
         <p>Canvas is what lets this work live large. Where glass and paper become heavy, fragile and reflective at size, framed
           canvas stays light, matte and readable from across a room — and almost any dimension is possible. In black and white,
-          a large bodyscape reads as a single sculptural form: abstract enough to sit in any interior, strong enough to anchor it.</p>
+          a large-scale work reads as a single sculptural form: abstract enough to sit in any interior, strong enough to anchor it.</p>
       </Section>
       <Section title="Where large-scale works belong">
         <p>Residential feature walls and over-bed statements; luxury apartment and development interiors; display suites and

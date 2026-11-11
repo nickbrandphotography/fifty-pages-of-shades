@@ -5,7 +5,7 @@ import { awards } from "@/lib/authority";
 
 export const metadata: Metadata = {
   title: "Awards & Recognition",
-  description: "Awards, recognition and collections featuring Nick Brand's bodyscape photography.",
+  description: "Awards, recognition and collections featuring Nick Brand's photography.",
   // Placeholder page: keep it out of search results until there are real awards to list.
   robots: awards.length > 0 ? undefined : { index: false, follow: true },
 };
@@ -18,7 +18,7 @@ export default function Awards() {
       <h1 className="font-serif text-5xl">Recognition</h1>
       {awards.length === 0 ? (
         <p className="mt-6 max-w-2xl font-serif text-2xl leading-relaxed text-ink/80">
-          Recognition for the Bodyscapes series is growing. Nick Brand's editions are held in private collections and shown
+          Recognition for Fifty Pages of Shades is growing. Nick Brand's editions are held in private collections and shown
           across a number of Sydney businesses and spaces. Awards, selections and notable placements will be recorded here as
           they are earned.
         </p>

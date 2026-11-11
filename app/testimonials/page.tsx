@@ -6,7 +6,7 @@ import { testimonials } from "@/lib/authority";
 
 export const metadata: Metadata = {
   title: "Testimonials",
-  description: "What collectors, interior designers and clients say about Nick Brand's bodyscape art and working with the studio.",
+  description: "What collectors, interior designers and clients say about Nick Brand's abstract photographic art and working with the studio.",
   // Placeholder page: keep it out of search results until there are real testimonials.
   robots: testimonials.length > 0 ? undefined : { index: false, follow: true },
 };

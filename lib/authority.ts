@@ -16,7 +16,7 @@ export const exhibitions: Exhibition[] = [
     venue: "NITA Gallery",
     suburb: "Surry Hills, Sydney",
     dates: "Now showing",
-    note: "Fifty Pages of Shades by Nick Brand is showing at NITA Gallery, 68 Campbell Street, Surry Hills. Limited-edition black-and-white bodyscapes on framed canvas, which you can see at scale and in person.",
+    note: "Fifty Pages of Shades by Nick Brand is showing at NITA Gallery, 68 Campbell Street, Surry Hills. Limited-edition black-and-white photographs on framed canvas, which you can see at scale and in person.",
     url: "https://www.nitagallery.com.au/nick-brand",
     address: { street: "68 Campbell Street", locality: "Surry Hills", region: "NSW", postcode: "2010" },
   },

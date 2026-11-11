@@ -5,7 +5,7 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 
 export const metadata: Metadata = {
   title: "Buy Black-and-White Art Photography",
-  description: "Browse available black-and-white bodyscape and abstract artworks by Nick Brand. Limited editions on framed canvas, custom sizes, priced from.",
+  description: "Browse available black-and-white abstract photographic artworks by Nick Brand. Limited editions on framed canvas, in custom sizes.",
 };
 
 export default function ArtworksPage() {

@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   if (!a) return {};
   // Keep titles within ~60 characters: use the longest form that fits.
   const brand = "Fifty Pages of Shades";
-  const title = [`${a.title} — Limited Edition Bodyscape | ${brand}`, `${a.title} | ${brand}`, a.title].find((t) => t.length <= 60) ?? a.title;
+  const title = [`${a.title} — Limited Edition Photograph | ${brand}`, `${a.title} | ${brand}`, a.title].find((t) => t.length <= 60) ?? a.title;
   const price = formatAUD(fromPrice(a.orientation));
   const description = [
     `${a.description} ${a.size}, ${a.medium}, edition of ${a.editionSize}. From ${price}.`,
@@ -77,7 +77,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
         <h1 className="font-serif text-4xl md:text-5xl">{a.title}</h1>
         <span className="text-xs uppercase tracking-widest2 text-stone">{editionLabel(a)}</span>
       </div>
-      {coll && <Link href={`/collections/${coll.slug}/`} className="text-sm text-ink/50 hover:text-ink">{coll.title} collection</Link>}
+      {coll && <Link href="/collections/" className="text-sm text-ink/50 hover:text-ink">{coll.title} collection</Link>}
 
       <div className="mt-10">
         <ArtworkExperience artwork={a} pricing={pricingFor(a.orientation)} frames={frames} sizes={sizesFor(a.orientation)} />
@@ -90,7 +90,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
           <p className="font-serif text-2xl leading-relaxed text-ink/85">{a.description}</p>
           <p className="mt-6 text-sm text-ink/60">
             Photographed in black and white and printed at scale on premium canvas, gallery-framed and wired ready
-            to hang. A study in form — the body as line, light and texture.
+            to hang. A study in form, light and texture.
           </p>
         </div>
         <div>

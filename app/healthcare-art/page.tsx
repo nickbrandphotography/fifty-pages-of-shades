@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 // Only claims that follow from how the work is made. Facility-specific requirements are quoted per project.
 const faqs = [
   { q: "Can you supply art for hospitals, clinics and other healthcare facilities?", a: "Yes. Fifty Pages of Shades supplies original black-and-white art for hospitals, day surgeries, specialist clinics, wellness centres and aged-care interiors, with custom sizes and project-managed delivery." },
-  { q: "Is the imagery suitable for a patient and family setting?", a: "The work is abstract, tasteful monochrome form, never explicit, nude, boudoir or glamour photography. Because tastes and sensitivities differ by ward and by client, we work with you to select images that suit each space, and you can view the work before you decide." },
+  { q: "Is the imagery suitable for a patient and family setting?", a: "The work is abstract, entirely non-explicit monochrome art. Because tastes and sensitivities differ by ward and by client, we work with you to select images that suit each space, and you can view the work before you decide." },
   { q: "Is the art glazed?", a: "No. The work is printed on canvas and finished in a floating frame without a glass front, so there is no glare from overhead lighting and no glass to break." },
   { q: "Can you meet our facility's cleaning, mounting and security requirements?", a: "Send us your specification. Requirements for cleaning, tamper-resistant fixings or wall loading differ between facilities, so we confirm what is possible in writing before any order is placed." },
   { q: "Can the same image be used across several wards, floors or sites?", a: "Yes. We can scale one image to suit different spaces, or build a cohesive scheme across floors, buildings or sites, with one point of contact." },
@@ -68,6 +68,7 @@ export default function HealthcareArt() {
         <p>Hospital entrances and atriums; waiting rooms and day-surgery lounges; corridors and lift lobbies; specialist and
           consulting suites; oncology, maternity and wellness centres; allied-health clinics; private hospitals; aged-care and
           rehabilitation facilities; staff rooms and board rooms.</p>
+        <p>Abstract work is often best placed in lobbies, public corridors, consulting suites and staff areas. For patient rooms and behavioural-health settings, we recommend choosing images together with your clinical team, and we will help you shortlist.</p>
       </Section>
 
       <Section title="How a healthcare project runs">

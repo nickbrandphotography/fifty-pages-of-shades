@@ -4,8 +4,8 @@ import Breadcrumbs from "@/components/Breadcrumbs";
 import { articles, formatDate } from "@/lib/journal";
 
 export const metadata: Metadata = {
-  title: "Journal: Bodyscape & Art Notes",
-  description: "Essays and guides on bodyscape art, collecting fine art photography, and styling art in interiors, by Sydney artist Nick Brand.",
+  title: "Journal: Abstract Art Notes",
+  description: "Essays and guides on abstract photographic art, collecting fine art photography, and styling art in interiors, by Sydney artist Nick Brand.",
 };
 
 export default function JournalIndex() {

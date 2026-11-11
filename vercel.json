@@ -5,7 +5,13 @@
       "has": [{ "type": "host", "value": "fiftypagesofshades.com" }],
       "destination": "https://www.fiftypagesofshades.com/$1",
       "permanent": true
-    }
+    },
+    { "source": "/collections/bodyscapes", "destination": "/collections/", "permanent": true },
+    { "source": "/collections/bodyscapes/", "destination": "/collections/", "permanent": true },
+    { "source": "/collections/abstract-forms", "destination": "/collections/", "permanent": true },
+    { "source": "/collections/abstract-forms/", "destination": "/collections/", "permanent": true },
+    { "source": "/journal/what-is-a-bodyscape", "destination": "/journal/what-is-abstract-photographic-art/", "permanent": true },
+    { "source": "/journal/what-is-a-bodyscape/", "destination": "/journal/what-is-abstract-photographic-art/", "permanent": true }
   ],
   "headers": [
     {

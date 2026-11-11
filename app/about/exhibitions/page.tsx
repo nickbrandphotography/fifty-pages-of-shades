@@ -52,7 +52,7 @@ export default function Exhibitions() {
       <h1 className="font-serif text-5xl">Now showing at NITA Gallery, Sydney</h1>
       {exhibitions.length === 0 ? (
         <p className="mt-6 max-w-2xl font-serif text-2xl leading-relaxed text-ink/80">
-          Nick Brand's bodyscapes are shown in selected spaces across Sydney. To arrange a viewing,
+          Nick Brand's photography is shown in selected spaces across Sydney. To arrange a viewing,
           <Link href="/contact/" className="underline"> get in touch</Link>.
         </p>
       ) : (

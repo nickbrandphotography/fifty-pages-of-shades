@@ -1,6 +1,6 @@
 # Fifty Pages of Shades — Website (Next.js 15, Vercel)
 
-Collector-acquisition site for **Fifty Pages of Shades** by Nick Brand. Black-and-white bodyscape & abstract photographic
+Collector-acquisition site for **Fifty Pages of Shades** by Nick Brand. Black-and-white abstract photographic
 art, limited editions on framed canvas. Built with Next.js 15 (App Router), TypeScript, Tailwind. Runs natively
 on **Vercel** with automatic image optimisation.
 
@@ -26,7 +26,7 @@ Image optimisation (AVIF/WebP, responsive srcset) is handled automatically by Ve
 ## What's built
 
 - **Home** — hero, entity intro, collections, trust pillars, recent works, designer/collector paths
-- **Collections** hub + **Bodyscapes** / **Abstract Forms** pages
+- **Collection** page (all works in one collection)
 - **Available Works** gallery with live filter (collection / shape / price)
 - **Journal** with article template + 3 starter posts (BlogPosting schema)
 - **Collector Guide, Investment, Large Scale Art, Commissions, Corporate Art, FAQ, Glossary** (FAQ + DefinedTerm schema)

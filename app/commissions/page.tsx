@@ -5,12 +5,12 @@ import { Lede, Section } from "@/components/Prose";
 import Faq from "@/components/Faq";
 
 export const metadata: Metadata = {
-  title: "Commission a Bodyscape",
-  description: "Commission an original black-and-white bodyscape for a home or project. Bespoke concept, custom size and framing, by Sydney artist Nick Brand.",
+  title: "Commission an Artwork",
+  description: "Commission an original black-and-white abstract photograph for a home or project. Bespoke concept, custom size and framing, by Sydney artist Nick Brand.",
 };
 
 const faqs = [
-  { q: "Can I commission a bespoke bodyscape?", a: "Yes. Nick Brand accepts a limited number of commissions each year, created to your space within the abstract black-and-white language of the work." },
+  { q: "Can I commission a bespoke artwork?", a: "Yes. Nick Brand accepts a limited number of commissions each year, created to your space within the abstract black-and-white language of the work." },
   { q: "How much does a commission cost?", a: "Quoted individually by scale, framing and complexity. We confirm the price before any work begins." },
   { q: "How long does a commission take?", a: "Typically a few weeks from confirmed brief to delivery, depending on size and framing." },
 ];
@@ -23,7 +23,7 @@ export default function Commissions() {
       <h1 className="max-w-3xl font-serif text-5xl leading-tight">A work made for your wall</h1>
       <Lede>
         Some walls call for a work made specifically for them. Nick Brand accepts a limited number of commissions each year —
-        bespoke black-and-white bodyscape and abstract pieces created for a particular space, collection or project.
+        bespoke black-and-white abstract pieces created for a particular space, collection or project.
       </Lede>
 
       <Section title="Who commissions, and why">
