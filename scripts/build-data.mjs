@@ -20,7 +20,6 @@ function parseCSV(text) {
 }
 
 const A = parseCSV(fs.readFileSync(path.join(ART, "artworks.csv"), "utf8"));
-const P = parseCSV(fs.readFileSync(path.join(ART, "pricing.csv"), "utf8"));
 
 const artworks = A.map(r => ({
   slug: r.slug, title: r.title, image: `/artworks/${r.slug}.jpg`, thumb: `/artworks/${r.slug}-thumb.jpg`,
@@ -28,9 +27,7 @@ const artworks = A.map(r => ({
   size: r.size_cm, orientation: r.orientation, price: +r.price_aud, medium: r.medium,
   description: r.description, featured: r.featured.trim().toLowerCase() === "yes",
 }));
-const pricing = { landscape: [], square: [] };
-for (const p of P) pricing[p.aspect]?.push({ size: p.size_label, frame: p.frame, price: +p.price_aud, status: p.price_status });
-const frames = [...new Set(pricing.landscape.map(p => p.frame))];
+// Prices and sizes are generated from lib/pricing.ts, not from pricing.csv.
 const meta = {
   "fifty-pages-of-shades": { title: "Fifty Pages of Shades", tagline: "The Art of the Unseen Form.",
     intro: "Contemporary black-and-white abstract photographic art by Nick Brand, exploring form, texture, light and shadow." },
@@ -38,5 +35,5 @@ const meta = {
 // All works belong to the single Fifty Pages of Shades collection.
 for (const a of artworks) a.collection = "fifty-pages-of-shades";
 const collections = Object.entries(meta).map(([slug, m]) => ({ slug, ...m, count: artworks.filter(a => a.collection === slug).length }));
-fs.writeFileSync("data/catalog.json", JSON.stringify({ artworks, collections, pricing, frames }, null, 2));
+fs.writeFileSync("data/catalog.json", JSON.stringify({ artworks, collections }, null, 2));
 console.log(`catalog.json written — ${artworks.length} works, ${collections.length} collections`);

@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const faqs = [
   { q: "What is a limited edition?", a: "A work released in a fixed number of prints — for example, an edition of 15. Once all are sold, the edition closes permanently and is never reprinted, which is what makes the work scarce and collectible." },
   { q: "Why does edition size matter to value?", a: "The smaller the edition, the rarer each individual work — a key driver of long-term value in collectible photography." },
-  { q: "How much does fine art photography cost?", a: "Prices vary with the artist, edition size, and — for work on canvas — the size and framing. Works are priced from $1,700, with the final price set by the size and frame you choose." },
+  { q: "How much does fine art photography cost?", a: "Prices vary with the artist, edition size, and — for work on canvas — the size and framing. Works are priced from $750, with the final price set by the size and frame you choose." },
   { q: "Do the works come with a certificate?", a: "Yes. Every piece includes a signed Certificate of Authenticity and a provenance record stating the title, edition number and details." },
 ];
 
@@ -59,7 +59,7 @@ export default function CollectorGuide() {
       </Section>
       <Section title="How much does fine art photography cost?">
         <p>Prices vary with the artist, the edition size, and — for work on canvas — the size and framing of the piece.
-          Works from Fifty Pages of Shades are priced from $1,700, with the final price set by the size and frame you choose. Prices are shown
+          Works from Fifty Pages of Shades are priced from $750, with the final price set by the size and frame you choose. Prices are shown
           openly on each work and update as you select size and frame.</p>
       </Section>
       <Section title="Choosing the right size for your wall">

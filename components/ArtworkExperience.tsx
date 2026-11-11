@@ -89,11 +89,10 @@ export default function ArtworkExperience({
         <div className="border-t border-line pt-6">
           <div className="font-serif text-3xl">{row ? formatAUD(row.price) : "Price on request"}</div>
           <div className="mt-1 text-xs text-ink/45">
-            {size}, {frame.toLowerCase()}. Price includes framing and ready-to-hang wiring.
+            {size}, {frame.toLowerCase()}.{" "}
+            {frame.startsWith("No frame") ? "Gallery-wrapped canvas, ready to hang." : "Price includes framing and ready-to-hang wiring."}
           </div>
-          {row && row.status !== "CONFIRMED" && (
-            <div className="mt-1 text-xs text-stone">Indicative price — confirmed on enquiry.</div>
-          )}
+          <div className="mt-1 text-xs text-stone">Other sizes and bespoke dimensions are available on request.</div>
           <a href={enquireHref}
             className="mt-6 inline-block w-full border border-ink bg-ink px-6 py-4 text-center text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">
             Enquire to purchase

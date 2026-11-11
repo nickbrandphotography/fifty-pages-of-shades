@@ -48,7 +48,7 @@ export const articles: Article[] = [
     seoTitle: "Fine Art Photography Cost, Australia",
     seoDescription: "What drives the price of fine art photography in Australia: edition size, print size and framing, and where Nick Brand's limited editions sit.",
     body: [
-      { p: "Fine art photography in Australia spans a wide range, from a few hundred dollars for an open-edition print to tens of thousands for work by established names. For limited-edition work on canvas, the two biggest levers are the size of the piece and how it is framed. Works by Nick Brand are priced from $1,700, with the final figure set by the size and frame you choose." },
+      { p: "Fine art photography in Australia spans a wide range, from a few hundred dollars for an open-edition print to tens of thousands for work by established names. For limited-edition work on canvas, the two biggest levers are the size of the piece and how it is framed. Works by Nick Brand are priced from $750, with the final figure set by the size and frame you choose." },
       { h2: "What drives the price" },
       { p: "Three things matter most. First, the artist and their trajectory — recognition and demand lift prices over time. Second, the edition size — the scarcer the edition, the more each work commands. Third, the physical piece itself — a larger canvas in a premium frame costs more to produce and to own than a smaller, unframed one." },
       { h2: "Why edition size matters" },

@@ -27,7 +27,8 @@ const groups: { title: string; items: { q: string; a: string }[] }[] = [
     { q: "How do I choose the right size for my wall?", a: "As a guide, a feature work should fill about two-thirds of the wall or furniture below it, hung with its centre near eye level (about 145 to 150 cm). Send your dimensions and we will recommend a size." },
   ]},
   { title: "Buying, pricing and delivery", items: [
-    { q: "How much do the works cost?", a: "Prices are shown on each work and start from $1,700, with the final price set by the size and frame you choose." },
+    { q: "What sizes are available, and how does the price change?", a: "Every work is offered in seven sizes. Square works range from 60 x 60 cm to 200 x 200 cm, and landscape works from 90 x 60 cm up to 300 x 200 cm. The price scales with the size, and a floating frame adds a further amount. Bespoke dimensions are available on request." },
+    { q: "How much do the works cost?", a: "Prices are shown on each work and start from $750, with the final price set by the size and frame you choose." },
     { q: "How do I buy or enquire?", a: "Send an enquiry from any work. The studio replies personally, usually within one business day, to confirm price, reserve a piece, or answer questions." },
     { q: "Where can I see the work in person in Sydney?", a: "Fifty Pages of Shades is showing at NITA Gallery, 68 Campbell Street, Surry Hills, Sydney. It is open Tuesday and Wednesday 10am to 6pm, Thursday 10am to 8pm, Friday 10am to 6pm, Saturday 10am to 3pm, and by appointment any day. See the exhibitions page for details." },
     { q: "Do you ship internationally?", a: "Yes. Delivery is Australia-wide and worldwide on request, packed and protected for safe transit." },

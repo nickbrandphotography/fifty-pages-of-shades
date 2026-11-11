@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   // Keep titles within ~60 characters: use the longest form that fits.
   const brand = "Fifty Pages of Shades";
   const title = [`${a.title} — Limited Edition Photograph | ${brand}`, `${a.title} | ${brand}`, a.title].find((t) => t.length <= 60) ?? a.title;
-  const price = formatAUD(fromPrice(a.orientation));
+  const price = formatAUD(fromPrice(a));
   const description = [
     `${a.description} ${a.size}, ${a.medium}, edition of ${a.editionSize}. From ${price}.`,
     `${a.description} ${a.size}, edition of ${a.editionSize}. From ${price}.`,
@@ -39,7 +39,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
   if (!a) notFound();
   const coll = getCollection(a.collection);
   const [w, h] = a.size.replace(/ cm/, "").split(" x ").map((n) => parseInt(n));
-  const prices = pricingFor(a.orientation).map((p) => p.price);
+  const prices = pricingFor(a).map((p) => p.price);
   const schema = {
     "@context": "https://schema.org", "@type": ["VisualArtwork", "Product"], name: a.title,
     url: `${site.url}/artworks/${a.slug}/`, sku: a.slug,
@@ -81,7 +81,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
       {coll && <Link href="/collections/" className="text-sm text-ink/50 hover:text-ink">{coll.title} collection</Link>}
 
       <div className="mt-10">
-        <ArtworkExperience artwork={a} pricing={pricingFor(a.orientation)} frames={frames} sizes={sizesFor(a.orientation)} />
+        <ArtworkExperience artwork={a} pricing={pricingFor(a)} frames={frames} sizes={sizesFor(a)} />
       </div>
 
       {/* Story + specs */}
@@ -102,7 +102,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
               ["Edition", `${a.editionSize} (numbered, certified)`],
               ["Dimensions", `${a.size} (custom sizes available)`],
               ["Framing", "No frame / Black / Oak / White floating frame"],
-              ["From", formatAUD(fromPrice(a.orientation))],
+              ["From", formatAUD(fromPrice(a))],
               ["Authenticity", "Signed Certificate of Authenticity + provenance record"],
               ["Suited to", "Residences, boutique hotels, corporate reception and workspaces, healthcare lobbies and corridors"],
             ].map(([k, v]) => (
