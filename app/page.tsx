@@ -35,11 +35,11 @@ export default function Home() {
       {/* Intro statement */}
       <section className="border-y border-line bg-ink/[0.02]">
         <div className="mx-auto max-w-3xl px-5 py-20 text-center md:px-10">
-          <p className="font-serif text-2xl leading-relaxed md:text-3xl">
-            The collection consists of contemporary black-and-white abstract photographic artworks, exploring form,
-            texture, light and shadow through the abstract interpretation of the human form.
-          </p>
-          <div className="mt-8 space-y-5 text-base leading-relaxed text-ink/70 md:text-lg">
+          <div className="space-y-6 font-serif text-xl leading-relaxed text-ink/85 md:text-2xl">
+            <p>
+              The collection consists of contemporary black-and-white abstract photographic artworks, exploring form,
+              texture, light and shadow through the abstract interpretation of the human form.
+            </p>
             <p>
               The resulting images are entirely non-explicit and often surprisingly difficult to interpret. They sit somewhere
               between abstract photography and contemporary fine art, offering something quite different from conventional
