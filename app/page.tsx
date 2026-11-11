@@ -36,10 +36,24 @@ export default function Home() {
       <section className="border-y border-line bg-ink/[0.02]">
         <div className="mx-auto max-w-3xl px-5 py-20 text-center md:px-10">
           <p className="font-serif text-2xl leading-relaxed md:text-3xl">
-            A bodyscape is the human form seen as landscape — skin, shadow and line abstracted until the body
-            becomes terrain, light and pure shape. Tasteful and abstract, never explicit: the body as a study in
-            form, not a subject of exposure.
+            The collection consists of contemporary black-and-white abstract photographic artworks, exploring form,
+            texture, light and shadow through the abstract interpretation of the human form.
           </p>
+          <div className="mt-8 space-y-5 text-base leading-relaxed text-ink/70 md:text-lg">
+            <p>
+              The resulting images are entirely non-explicit and often surprisingly difficult to interpret. They sit somewhere
+              between abstract photography and contemporary fine art, offering something quite different from conventional
+              photographic prints.
+            </p>
+            <p>
+              The collection is particularly suited to considered residential interiors, boutique hospitality, hotels and
+              contemporary commercial environments.
+            </p>
+            <p>
+              I operate my own gallery in Sydney, where the collection is exhibited, and can also accommodate bespoke sizing,
+              framing and coordinated artwork selections for individual projects.
+            </p>
+          </div>
         </div>
       </section>
 
