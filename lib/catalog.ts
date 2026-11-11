@@ -6,6 +6,7 @@ export type Artwork = {
   status: string; size: string; orientation: "landscape" | "square";
   price: number; medium: string; description: string; featured: boolean;
   pixels: { w: number; h: number };
+  alt: string;
 };
 export type PriceRow = { size: string; frame: string; price: number; status: string };
 export type Collection = { slug: string; title: string; tagline: string; intro: string; count: number };
@@ -35,6 +36,9 @@ export const priceFor = (orientation: string, size: string, frame: string): Pric
   pricingFor(orientation).find((p) => p.size === size && p.frame === frame);
 export const fromPrice = (orientation: string): number =>
   Math.min(...pricingFor(orientation).map((p) => p.price));
+
+/** Descriptive alt text: what the image shows, plus medium and artist. */
+export const altFor = (a: Artwork) => `${a.title}, black-and-white abstract photograph by Nick Brand. ${a.alt}`;
 
 export const formatAUD = (n: number) =>
   new Intl.NumberFormat("en-AU", { style: "currency", currency: "AUD", maximumFractionDigits: 0 }).format(n);

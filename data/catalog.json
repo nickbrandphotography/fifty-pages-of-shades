@@ -18,7 +18,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "Smooth monochrome curves and a shadowed fold meeting on a diagonal, lit from the left against black."
     },
     {
       "slug": "canyon-carved-into-the-landscape-of-the-body",
@@ -38,7 +39,8 @@
       "pixels": {
         "w": 1800,
         "h": 1201
-      }
+      },
+      "alt": "A single bright ridge line sweeping diagonally across darkness, its edge textured like rock."
     },
     {
       "slug": "sand-dunes-of-the-sole",
@@ -58,7 +60,8 @@
       "pixels": {
         "w": 1800,
         "h": 1198
-      }
+      },
+      "alt": "A rolling, finely grained surface lit from the side, like windblown sand dunes at night."
     },
     {
       "slug": "where-the-body-ends-and-atmosphere-begins",
@@ -78,7 +81,8 @@
       "pixels": {
         "w": 1800,
         "h": 1201
-      }
+      },
+      "alt": "A thin curved line of light along a dark horizon, finely grained like a distant ridge."
     },
     {
       "slug": "the-soft-angle",
@@ -98,7 +102,8 @@
       "pixels": {
         "w": 1800,
         "h": 1201
-      }
+      },
+      "alt": "A soft contour turning sharply in a dark space beneath a pale plane of light."
     },
     {
       "slug": "the-crease-that-deepens-when-no-one-is-watching",
@@ -118,7 +123,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "A diagonal band of finely textured surface in sharp focus, light grazing its grain."
     },
     {
       "slug": "skins-secret-conversation",
@@ -138,7 +144,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "Two smooth curves overlapping in soft light and deep shadow, one rising to the right."
     },
     {
       "slug": "black-velvet",
@@ -158,7 +165,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "A soft curve of lit skin rising across a deep black field, fine texture catching the light."
     },
     {
       "slug": "the-shadow-beneath-the-reach",
@@ -178,7 +186,8 @@
       "pixels": {
         "w": 1800,
         "h": 1285
-      }
+      },
+      "alt": "A pale, smooth plane folding into deep shadow, tones shifting from light grey to black."
     },
     {
       "slug": "the-place-where-skin-forgets-it-ends",
@@ -198,7 +207,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "A close view of a textured curve with a bright highlight sliding into deep shadow."
     },
     {
       "slug": "the-place-hands-find",
@@ -218,7 +228,8 @@
       "pixels": {
         "w": 1800,
         "h": 1201
-      }
+      },
+      "alt": "A curved edge glowing with rim light against black, soft texture along its contour."
     },
     {
       "slug": "the-angle-of-the-body-in-love-with-stillness",
@@ -238,7 +249,8 @@
       "pixels": {
         "w": 1800,
         "h": 1201
-      }
+      },
+      "alt": "A broad, softly lit curve of smooth surface fading into shadow at the edges."
     },
     {
       "slug": "saturn",
@@ -258,7 +270,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "A rounded form catching one bright highlight against black, beside a thin horizontal thread of light."
     },
     {
       "slug": "the-meeting-of-two-quiet-planes",
@@ -278,7 +291,8 @@
       "pixels": {
         "w": 1800,
         "h": 1334
-      }
+      },
+      "alt": "Two planes of smooth grey tone meeting along a gentle diagonal."
     },
     {
       "slug": "the-body-behind-the-weather",
@@ -298,7 +312,8 @@
       "pixels": {
         "w": 1800,
         "h": 1201
-      }
+      },
+      "alt": "A curved contour in shadow behind a rain-streaked glass pane, droplets catching the light."
     },
     {
       "slug": "the-line-that-holds-the-dark",
@@ -318,7 +333,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "Thin bright lines tracing angular edges through near-total darkness."
     },
     {
       "slug": "the-slow-rise-of-the-back",
@@ -338,7 +354,8 @@
       "pixels": {
         "w": 1800,
         "h": 1800
-      }
+      },
+      "alt": "A long low curve like a dune ridge, fine texture catching low light against black."
     }
   ],
   "collections": [

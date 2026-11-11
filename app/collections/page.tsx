@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Abstract Black & White Photography",
-  description: "Contemporary abstract black-and-white photographic art by Nick Brand. Limited editions of 15 on framed canvas, custom sizes, showing at NITA Gallery, Sydney.",
+  description: "Contemporary monochrome wall art: abstract black-and-white photography by Nick Brand. Limited editions of 15 on framed canvas, showing at NITA Gallery, Sydney.",
 };
 
 const paths: { head: string; body: string; href: string; cta: string }[] = [
@@ -57,6 +57,11 @@ export default function CollectionsPage() {
         </p>
       </div>
 
+      <div className="mt-8 flex flex-wrap gap-3">
+        <Link href="/contact/" className="border border-ink bg-ink px-6 py-3 text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">Enquire about a work</Link>
+        <Link href="/about/exhibitions/" className="border border-line px-6 py-3 text-xs uppercase tracking-widest2 text-ink/70 transition hover:border-ink hover:text-ink">Arrange a private viewing</Link>
+      </div>
+
       <section className="mt-20" aria-labelledby="works-h">
         <div className="eyebrow mb-2">The Collection</div>
         <h2 id="works-h" className="mb-10 font-serif text-4xl">{sorted.length} limited-edition works</h2>
@@ -74,7 +79,7 @@ export default function CollectionsPage() {
           <p>
             The work is created for spaces where art plays an important role in the overall environment. From private residences
             and architectural interiors to boutique hotels, corporate environments and hospitality spaces, the collection offers a
-            distinctive alternative to conventional decorative artwork.
+            distinctive alternative to conventional decorative wall art.
           </p>
           <p>
             Each work is produced as a limited edition of 15, printed on canvas in a range of formats and bespoke dimensions,
@@ -130,6 +135,7 @@ export default function CollectionsPage() {
         </p>
         <p className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-xs uppercase tracking-widest2 text-ink/70">
           <Link href="/about/exhibitions/" className="hover:text-ink">Arrange a private viewing →</Link>
+          <Link href="/contact/" className="hover:text-ink">Enquire →</Link>
           <a href={n.mapUrl} className="hover:text-ink">Directions →</a>
         </p>
       </section>

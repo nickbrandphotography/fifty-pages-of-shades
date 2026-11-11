@@ -1,13 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Artwork, fromPrice, formatAUD, editionLabel } from "@/lib/catalog";
+import { Artwork, altFor, fromPrice, formatAUD, editionLabel } from "@/lib/catalog";
 
 export default function ArtworkCard({ a }: { a: Artwork }) {
   return (
     <Link href={`/artworks/${a.slug}/`} className="group block">
       <div className="flex aspect-[4/3] items-center justify-center overflow-hidden bg-paper">
         <Image
-          src={a.thumb} alt={`${a.title} — black and white photographic artwork by Nick Brand`}
+          src={a.thumb} alt={altFor(a)}
           width={a.pixels.w} height={a.pixels.h}
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
           className="h-auto w-auto max-h-full max-w-full shadow-[0_24px_50px_-28px_rgba(0,0,0,0.55)] transition duration-700 group-hover:scale-[1.02]"

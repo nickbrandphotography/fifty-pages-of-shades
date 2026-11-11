@@ -59,6 +59,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
     width: { "@type": "QuantitativeValue", value: w, unitCode: "CMT" },
     height: { "@type": "QuantitativeValue", value: h, unitCode: "CMT" },
     isAccessibleForFree: false,
+    audience: { "@type": "Audience", audienceType: "Art collectors, interior designers, architects, corporate and healthcare buyers" },
   };
   const crumbs = {
     "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -103,6 +104,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
               ["Framing", "No frame / Black / Oak / White floating frame"],
               ["From", formatAUD(fromPrice(a.orientation))],
               ["Authenticity", "Signed Certificate of Authenticity + provenance record"],
+              ["Suited to", "Residences, boutique hotels, corporate reception and workspaces, healthcare lobbies and corridors"],
             ].map(([k, v]) => (
               <div key={k} className="flex justify-between gap-6 py-3">
                 <dt className="text-ink/50">{k}</dt><dd className="text-right text-ink/80">{v}</dd>

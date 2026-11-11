@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { featured, artworks } from "@/lib/catalog";
+import { altFor, featured, artworks } from "@/lib/catalog";
 import ArtworkCard from "@/components/ArtworkCard";
 import { articles } from "@/lib/journal";
 
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-center reveal">
-          <Image src={hero.image} alt={`${hero.title} — black and white abstract photograph by Nick Brand`}
+          <Image src={hero.image} alt={altFor(hero)}
             width={hero.pixels.w} height={hero.pixels.h} priority
             sizes="(max-width: 768px) 100vw, 50vw"
             className="h-auto w-auto max-h-[70vh] shadow-[0_50px_90px_-40px_rgba(0,0,0,0.55)]" />

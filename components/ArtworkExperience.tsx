@@ -1,7 +1,7 @@
 "use client";
 import { useMemo, useState } from "react";
 import Image from "next/image";
-import { Artwork, PriceRow, formatAUD } from "@/lib/catalog";
+import { Artwork, PriceRow, altFor, formatAUD } from "@/lib/catalog";
 
 function frameStyle(frame: string): { bg: string; gap: string } | null {
   if (frame.startsWith("No frame")) return null;
@@ -29,7 +29,7 @@ export default function ArtworkExperience({
     `&frame=${encodeURIComponent(frame)}&price=${row ? row.price : ""}`;
 
   const Img = (
-    <Image src={artwork.image} alt={`${artwork.title} — black and white photographic artwork by Nick Brand`}
+    <Image src={artwork.image} alt={altFor(artwork)}
       width={artwork.pixels.w} height={artwork.pixels.h} priority
       sizes="(max-width: 1024px) 100vw, 60vw"
       className="block h-auto w-auto max-h-[70vh] max-w-full" />
