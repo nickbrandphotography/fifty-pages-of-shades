@@ -97,6 +97,10 @@ export default function ArtworkExperience({
             className="mt-6 inline-block w-full border border-ink bg-ink px-6 py-4 text-center text-xs uppercase tracking-widest2 text-paper transition hover:bg-transparent hover:text-ink">
             Enquire to purchase
           </a>
+          <a href={`/view-on-your-wall/?work=${encodeURIComponent(artwork.slug)}`}
+            className="mt-3 inline-block w-full border border-ink px-6 py-4 text-center text-xs uppercase tracking-widest2 text-ink transition hover:bg-ink hover:text-paper">
+            See it on your wall
+          </a>
           <p className="mt-3 text-center text-xs text-ink/45">
             Considered replies, usually within one business day. No pressure, no sales scripts.
           </p>
