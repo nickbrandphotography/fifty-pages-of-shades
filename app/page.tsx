@@ -49,8 +49,8 @@ export default function Home() {
               contemporary commercial environments.
             </p>
             <p>
-              I operate my own gallery in Sydney, where the collection is exhibited, and can also accommodate bespoke sizing,
-              framing and coordinated artwork selections for individual projects.
+              I co-own NITA Gallery in Surry Hills, Sydney, where the collection is exhibited, and can also accommodate bespoke
+              sizing, framing and coordinated artwork selections for individual projects.
             </p>
           </div>
         </div>
