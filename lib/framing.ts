@@ -14,7 +14,10 @@ import { frameUplift, ladderFor, unframedPrice, type Dim } from "@/lib/pricing";
 export type Finish = "canvas" | "paper";
 
 export type Moulding = { id: string; label: string; canvasName: string };
+// The oak shadow frame (7 mm of oak and a 3 mm shadow gap, 10 mm in all, no mat) is the house frame and the
+// default everywhere the work is pictured. The others are alternatives a buyer can choose.
 export const MOULDINGS: Moulding[] = [
+  { id: "oak-shadow", label: "Oak shadow frame", canvasName: "Oak shadow frame" },
   { id: "none", label: "No frame", canvasName: "No frame (gallery wrap)" },
   { id: "black", label: "Black", canvasName: "Black floating frame" },
   { id: "oak", label: "Natural oak", canvasName: "Natural oak floating frame" },
@@ -49,7 +52,12 @@ export const BUILD = {
   floatGap: 1.0, // shadow gap between the canvas edge and the frame
   paperFace: 2.4, // front face of a standard frame moulding for paper
   bevel: 0.35, // visible white core of a mat's bevelled window
+  shadowFace: 0.7, // oak shadow frame: oak face
+  shadowGap: 0.3, // oak shadow frame: shadow gap
 };
+
+/** The oak shadow frame never takes a mat. */
+const matFor = (c: Config) => (c.moulding === "oak-shadow" ? 0 : MATS.find((x) => x.id === c.mat)?.width ?? 0);
 
 export type Config = { finish: Finish; moulding: string; mat: string; glass: string; size: Dim };
 
@@ -63,12 +71,16 @@ export function sizesForFinish(pixels: { w: number; h: number }, finish: Finish)
 /** Outside size of the finished piece in cm, frame included. */
 export function outerSize(c: Config): { w: number; h: number } {
   const { w, h } = c.size;
+  if (c.moulding === "oak-shadow") {
+    const add = 2 * (BUILD.shadowFace + BUILD.shadowGap);
+    return { w: w + add, h: h + add };
+  }
   if (c.finish === "canvas") {
     if (c.moulding === "none") return { w, h };
     const add = 2 * (BUILD.floatFace + BUILD.floatGap);
     return { w: w + add, h: h + add };
   }
-  const m = MATS.find((x) => x.id === c.mat)?.width ?? 0;
+  const m = matFor(c);
   const add = 2 * (m + BUILD.paperFace);
   return { w: w + add, h: h + add };
 }
@@ -78,7 +90,7 @@ export function priceFor(c: Config): number {
   const base = unframedPrice(w, h);
   if (c.finish === "canvas") return c.moulding === "none" ? base : base + frameUplift(w);
 
-  const m = MATS.find((x) => x.id === c.mat)?.width ?? 0;
+  const m = matFor(c);
   const ow = w + 2 * m, oh = h + 2 * m;
   const glass = GLASS.find((g) => g.id === c.glass) ?? GLASS[0];
   const matCost = m > 0 ? ((2 * (ow + oh)) / 100) * MAT_PER_METRE : 0;
@@ -90,7 +102,8 @@ export function priceFor(c: Config): number {
 export function describe(c: Config): string {
   const mould = MOULDINGS.find((x) => x.id === c.moulding) ?? MOULDINGS[0];
   if (c.finish === "canvas") return `Canvas, ${mould.canvasName.toLowerCase()}`;
-  const mat = MATS.find((x) => x.id === c.mat) ?? MATS[0];
+  const mat = c.moulding === "oak-shadow" ? MATS[0] : MATS.find((x) => x.id === c.mat) ?? MATS[0];
   const glass = GLASS.find((x) => x.id === c.glass) ?? GLASS[0];
+  if (c.moulding === "oak-shadow") return `Fine art paper, oak shadow frame, ${glass.label.toLowerCase()} glass`;
   return `Fine art paper, ${mould.label.toLowerCase()} frame, ${mat.id === "none" ? "no mat" : mat.label.toLowerCase() + " mat"}, ${glass.label.toLowerCase()} glass`;
 }

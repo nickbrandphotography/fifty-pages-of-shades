@@ -1,10 +1,11 @@
 "use client";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { Artwork, PriceRow, altFor, formatAUD } from "@/lib/catalog";
 
 function frameStyle(frame: string): { bg: string; gap: string } | null {
   if (frame.startsWith("No frame")) return null;
+  if (frame.startsWith("Oak shadow")) return { bg: "oak-shadow", gap: "" };
   if (frame.startsWith("Black")) return { bg: "#141414", gap: "#0b0a09" };
   if (frame.startsWith("Natural oak")) return { bg: "#b9986a", gap: "#0b0a09" };
   if (frame.startsWith("White")) return { bg: "#efeee9", gap: "#0b0a09" };
@@ -16,8 +17,20 @@ export default function ArtworkExperience({
 }: { artwork: Artwork; pricing: PriceRow[]; frames: string[]; sizes: string[] }) {
   const defaultSize = sizes.includes(artwork.size) ? artwork.size : sizes[Math.floor(sizes.length / 2)];
   const [size, setSize] = useState(defaultSize);
-  const [frame, setFrame] = useState(frames.find((f) => f.startsWith("Black")) ?? frames[0]);
-  const [view, setView] = useState<"floating" | "framed">("floating");
+  // The oak shadow frame is the house frame, so works are pictured in it unless the buyer picks another.
+  const [frame, setFrame] = useState(frames.find((f) => f.startsWith("Oak shadow")) ?? frames[0]);
+  const [view, setView] = useState<"floating" | "framed">("framed");
+  // The oak shadow frame is 10 mm at the chosen size, so its width on screen follows the image's width.
+  const imgBox = useRef<HTMLDivElement>(null);
+  const [imgW, setImgW] = useState(0);
+  useEffect(() => {
+    const el = imgBox.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setImgW(el.clientWidth));
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [view, frame]);
+  const sizeW = parseFloat(size) || 100;
 
   const row = useMemo(
     () => pricing.find((p) => p.size === size && p.frame === frame),
@@ -42,6 +55,11 @@ export default function ArtworkExperience({
         <div className="flex min-h-[420px] items-center justify-center bg-paper p-2 md:p-6">
           {view === "floating" || !fs ? (
             <div style={{ boxShadow: "0 40px 70px -35px rgba(0,0,0,0.5)" }}>{Img}</div>
+          ) : fs.bg === "oak-shadow" ? (
+            <div style={{ borderStyle: "solid", borderWidth: Math.max(2, (imgW * 1.0) / sizeW),
+              borderImage: "url(/brand/frame-oak.png) 56 stretch", boxShadow: "0 40px 70px -30px rgba(0,0,0,0.6)" }}>
+              <div ref={imgBox}>{Img}</div>
+            </div>
           ) : (
             <div style={{ background: fs.bg, padding: "2.4%", boxShadow: "0 40px 70px -30px rgba(0,0,0,0.6)" }}>
               <div style={{ background: fs.gap, padding: "1.4%" }}>{Img}</div>

@@ -6,7 +6,7 @@ import { artworks } from "@/lib/catalog";
 export const metadata: Metadata = {
   title: "View on Your Wall",
   description:
-    "Photograph your wall and see any Fifty Pages of Shades work on it at true size. Try canvas or paper, oak, black or white frames, mat boards and glass, with live pricing.",
+    "Photograph your wall and see any Fifty Pages of Shades work on it at true size. Shown in the oak shadow frame, or try canvas or paper in other frames, with live pricing.",
 };
 
 export default function ViewOnYourWallPage() {

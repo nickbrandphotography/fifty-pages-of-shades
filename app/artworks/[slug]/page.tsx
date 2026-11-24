@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
+import { mockupsFor } from "@/lib/mockups";
 import { artworks, getArtwork, getCollection, related, pricingFor, sizesFor, frames, editionLabel, formatAUD, fromPrice } from "@/lib/catalog";
 import ArtworkExperience from "@/components/ArtworkExperience";
 import ArtworkCard from "@/components/ArtworkCard";
@@ -84,6 +86,26 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
         <ArtworkExperience artwork={a} pricing={pricingFor(a)} frames={frames} sizes={sizesFor(a)} />
       </div>
 
+      {mockupsFor(a.slug).length > 0 && (
+        <section className="mt-20 border-t border-line pt-12" aria-labelledby="in-a-room">
+          <div className="eyebrow mb-3">In a room</div>
+          <h2 id="in-a-room" className="font-serif text-3xl">{a.title} on the wall</h2>
+          <p className="mt-3 max-w-2xl text-sm text-ink/60">
+            Shown at {mockupsFor(a.slug)[0].sizeLabel} in the oak shadow frame, to scale against each room&rsquo;s own
+            furniture. The photograph itself is unaltered. Every work comes in several sizes and frames.
+          </p>
+          <div className="mt-8 grid gap-6 md:grid-cols-3">
+            {mockupsFor(a.slug).map((m) => (
+              <figure key={m.slug}>
+                <Image src={m.image} alt={m.alt} width={m.width} height={m.height}
+                  sizes="(max-width: 768px) 100vw, 33vw" className="h-auto w-full" />
+                <figcaption className="mt-2 text-xs text-ink/50">{m.room}</figcaption>
+              </figure>
+            ))}
+          </div>
+        </section>
+      )}
+
       {/* Story + specs */}
       <div className="mt-20 grid gap-12 border-t border-line pt-12 md:grid-cols-2">
         <div>
@@ -101,7 +123,7 @@ export default async function ArtworkPage({ params }: { params: Promise<{ slug: 
               ["Medium", a.medium],
               ["Edition", `${a.editionSize} (numbered, certified)`],
               ["Dimensions", `${a.size} (custom sizes available)`],
-              ["Framing", "No frame / Black / Oak / White floating frame"],
+              ["Framing", "Oak shadow frame (10 mm), or no frame / black / oak / white floating frame"],
               ["From", formatAUD(fromPrice(a))],
               ["Authenticity", "Signed Certificate of Authenticity + provenance record"],
               ["Suited to", "Residences, boutique hotels, corporate reception and workspaces, healthcare lobbies and corridors"],

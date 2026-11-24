@@ -21,7 +21,7 @@ const BEYOND_EXPONENT = 0.8; // price growth above the largest anchor
 const LADDER_SQUARE = [60, 80, 100, 120, 150, 180, 200];
 const LADDER_LANDSCAPE = [90, 120, 150, 180, 210, 240, 300];
 
-export const FRAMES = ["No frame (gallery wrap)", "Black floating frame", "Natural oak floating frame", "White floating frame"];
+export const FRAMES = ["Oak shadow frame", "No frame (gallery wrap)", "Black floating frame", "Natural oak floating frame", "White floating frame"];
 
 const round50 = (n: number) => Math.round(n / 50) * 50;
 
